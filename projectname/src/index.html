@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1" />
+    <meta property="qc:admins" content="2102207657673263756367" />
+    <meta name="keywords" content="东方电视购物,积分,全国免费配送,全国免费退换,部分商品当天配送,MB,MARIE BONNE,GENIA,时装周,上海时装周,双十一、11.11、双11、5折、半价、第二件半价、加价购" />
+    <meta name="description" content="全国免费配送，全国免费退换，促销，团购，部分商品当天配送，周末暴杀，今日特卖 。" />
+    <title>东方购物</title>
+
+    <link rel="icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" />
+
+</head>
+
+<body>
+
+    <div class="headerConent">
+
+
+        <!-- 个人信息 -->
+
+        <div id="" class="g-area-done area_more hidden">
+            <div class="area_select">
+                <h3>已登录</h3>
+                <span id="pop_after_close" class="close mask_close"></span>
+                <div class="area_select_done">您的账户地址为<b><span id="substation_name1"></span></b>，系统自动帮您跳转至<em><span id="substation_name2"></span></em></div>
+                <div class="area_select_done_tips"><span>登录后不能更改分站，如需更改分站请退出后再选择。</span></div>
+                <div class="area_select_done_button"><button class="ok" id="substation_ok">我知道了</button></div>
+            </div>
+        </div>
+
+
+
+        <div class="g-site-nav">
+            <div class="g-container-1190">
+                <!--暂时不上线 start-->
+                <!--
+			<h3 class="g-family">FAMILY<b class="icon-arrow-down9"></b></h3>
+			-->
+                <!--暂时不上线 end-->
+                <div class="user_info" id="user_info"></div>
+                <!--用户信息-->
+                <span class="g-normal">送货至:</span>
+                <div class="g-area">
+                    <dl>
+                        <dt>
+						<s></s> 
+						<span class="g-location hiconfont">&#xe637;</span> 
+						<span class="g-cur-area" id="g-cur-area"> </span> 
+						<span class="change" id="change-areay">[更换]</span>
+					</dt>
+                        <dd>
+                            <div class="g-location-choose" id="g-location-choose">
+
+                                <ul class="hot">
+                                    <li class="clear_float hot">
+                                        <b><img src="img/tophot.png" />热门省市</b>
+                                        <span onclick="changeRegion_cd('2000', '2000','100','','10','001');">上海</span>
+                                        <span onclick="changeRegion_cd('2000', '2001','970','','13','001');" style="color:#d50000;">北京</span>
+                                        <span onclick="changeRegion_cd('2000', '2008','960','','21','010');">江苏</span>
+                                        <span onclick="changeRegion_cd('2000', '2011','961','','31','001');">浙江</span>
+                                        <span onclick="changeRegion_cd('2000', '6030','550','','36','005');">湖北</span>
+                                        <span onclick="changeRegion_cd('2000', '2030','970','','40','024');">四川</span>
+                                        <span onclick="changeRegion_cd('2000', '6060','500','','20','021');">黑龙江</span>
+                                    </li>
+                                </ul>
+                                <ul>
+
+                                    <li class="clear_float"><b>A</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="6011" onclick="changeRegion_cd('2000', '6011','970','','32','011');"
+								>安徽</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>B</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2001" onclick="changeRegion_cd('2000', '2001','970','','13','001');"
+								>北京</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>C</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2003" onclick="changeRegion_cd('2000', '2003','970','','15','001');"
+								>重庆</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>F</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2013" onclick="changeRegion_cd('2000', '2013','970','','33','009');"
+								>福建</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>G</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2017" onclick="changeRegion_cd('2000', '2017','970','','38','019');"
+								>广东</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2019" onclick="changeRegion_cd('2000', '2019','970','','41','007');"
+								>贵州</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2022" onclick="changeRegion_cd('2000', '2022','970','','44','008');"
+								>甘肃</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2025" onclick="changeRegion_cd('2000', '2025','970','','47','007');"
+								>广西</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>H</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="6060" onclick="changeRegion_cd('2000', '6060','500','','20','021');"
+								>黑龙江</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="6030" onclick="changeRegion_cd('2000', '6030','550','','36','005');"
+								>湖北</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2004" onclick="changeRegion_cd('2000', '2004','970','','16','004');"
+								>河北</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2015" onclick="changeRegion_cd('2000', '2015','970','','35','007');"
+								>河南</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2016" onclick="changeRegion_cd('2000', '2016','970','','37','016');"
+								>湖南</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2018" onclick="changeRegion_cd('2000', '2018','970','','39','016');"
+								>海南</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>J</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2008" onclick="changeRegion_cd('2000', '2008','960','','21','010');"
+								>江苏</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2007" onclick="changeRegion_cd('2000', '2007','970','','19','008');"
+								>吉林</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2014" onclick="changeRegion_cd('2000', '2014','970','','34','006');"
+								>江西</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>L</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2006" onclick="changeRegion_cd('2000', '2006','970','','18','003');"
+								>辽宁</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>N</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2024" onclick="changeRegion_cd('2000', '2024','970','','46','007');"
+								>内蒙古</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2027" onclick="changeRegion_cd('2000', '2027','970','','49','002');"
+								>宁夏</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>Q</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2023" onclick="changeRegion_cd('2000', '2023','970','','45','002');"
+								>青海</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>S</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							class="cur"style="color:#d50000;"
+							href="javascript:void(0);" id="2000" onclick="changeRegion_cd('2000', '2000','100','','10','001');"
+								>上海</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2005" onclick="changeRegion_cd('2000', '2005','970','','17','005');"
+								>山西</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2030" onclick="changeRegion_cd('2000', '2030','970','','40','024');"
+								>四川</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2021" onclick="changeRegion_cd('2000', '2021','970','','43','004');"
+								>陕西</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2029" onclick="changeRegion_cd('2000', '2029','970','','71','013');"
+								>山东</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>T</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2002" onclick="changeRegion_cd('2000', '2002','962','','14','001');"
+								>天津</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>X</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2026" onclick="changeRegion_cd('2000', '2026','970','','48','005');"
+								>中国西藏</a></span>
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2028" onclick="changeRegion_cd('2000', '2028','970','','53','002');"
+								>中国新疆</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>Y</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2020" onclick="changeRegion_cd('2000', '2020','970','','42','010');"
+								>云南</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+                                    <li class="clear_float">
+                                        <b>Z</b>
+                                        <!-- <span class="loc"> -->
+
+                                        <span><a  
+							
+							href="javascript:void(0);" id="2011" onclick="changeRegion_cd('2000', '2011','961','','31','001');"
+								>浙江</a></span>
+
+                                        <!-- </span> -->
+                                    </li>
+
+                                </ul>
+                                <!-- <p><a href="javascript:void(0);" onclick="changeRegion_cd('2000', '2000','100','1000','10','001');">选择其它城市</a></p> -->
+
+
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="g-weixin">
+                    <dl>
+                        <dt>
+								<s></s> <span><img src="/common/webpc/image/common/topimg5.png" /></span> 
+								<b>微信</b> 
+							</dt>
+                        <dd>
+                            <div class="g-weixin-pic" id="g-weixin-pic">
+                                <p class="g-weixin-txt1">扫一扫，关注我们</p>
+                                <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9905/11128/1_20170904091940_98.jpg" alt="东方购物" />
+                                <p class="g-weixin-txt2">
+                                    微信服务号：OCJ_FW<br>
+                                    <font color="#A30000">关注并绑定账户送5元积分哟</font>
+                                </p>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+
+
+                <span class="g-tv"><span class="hiconfont">&#xe627;</span><a href="javascript:;">TV版</a></span>
+                <span class="g-phone"><!-- 移动版 -->
+					<span class="hiconfont">&#xe610;</span><a href="javascript:;">移动版</a>
+                </span>
+
+                <span class="g-guest-center"><!-- 顾客中心 -->
+					 <span class="hiconfont">&#xe648;</span><a href="javascript:;">顾客中心</a>
+                </span>
+                <div class="g-myocj">
+                    <dl>
+                        <dt>
+							<s></s> 
+							<span class="hiconfont">&#xe634;</span>
+							<b><a href=javascript:;">我的购物</a></b> 
+							<span class="icon-arrow-down8 icon-arr"></span>
+						</dt>
+                        <dd>
+                            <div class="g-myocj-more">
+                                <ul>
+                                    <li><a href="javascript:;">订单查询</a></li>
+                                    <li><a href="javascript:;">积分查询</a></li>
+                                    <li><a href="javascript:;">抵用券查询</a></li>
+                                    <li><a href="javascript:;">我的收藏</a></li>
+                                    <li><a href="javascript:;">修改信息</a></li>
+                                </ul>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="g-side-bar">
+
+            <div class="olympicSidebarWrap" style="background-color: #c7c5eb;">
+
+
+                <!--楼梯效果的轮播图-->
+                <div class="silderNavNoControl silderContentFixShow">
+
+                    <div class="silderContentFixShowImg">
+                        <a href="javascript:;">
+                            <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20190619160159_71.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="silderContentFixShowImg">
+                        <a href="javascript:;">
+                            <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20180813173124_81.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="silderContentFixShowImg">
+                        <a href="javascript:;">
+                            <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20170411145122_63.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="silderContentFixShowImg">
+                        <a href="javascript:;">
+                            <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9940/11263/1_20190203100732_48.jpg" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--楼梯效果-->
+                <!-- 只有首页显示 -->
+
+                <div class="rightFixNavButton">
+
+                    <div class="rightFixNavButtonLink">
+                        <a href="javascript:void(0)">
+						食品饮料
+					</a>
+                    </div>
+
+                    <div class="rightFixNavButtonLink">
+                        <a href="javascript:void(0)">
+						家居厨房
+					</a>
+                    </div>
+
+                    <div class="rightFixNavButtonLink">
+                        <a href="javascript:void(0)">
+						3C家电
+					</a>
+                    </div>
+
+                    <div class="rightFixNavButtonLink">
+                        <a href="javascript:void(0)">
+						时尚服饰
+					</a>
+                    </div>
+
+                </div>
+
+                <div class="server">
+                    <div class="bird"><a href="javascript:popICC();">东东客服</a></div>
+                    <div class="g-go-top">返回顶部</div>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- 员工意见提交 -->
+            <div class="two-code" id="suggesty" style="display: none; margin-bottom: 5px;">
+
+                <a href="javascript:empSuggest()"><img src="http://cdnimg.ocj.com.cn/common/theme/v1/images/oclub/hio_bird.png" alt="侧边" /> <span>建议/意见</span></a>
+
+            </div>
+        </div>
+
+
+
+        <div>
+            <!-- TOPLOGO栏 -->
+
+            <div class="g-header-main g-container-1190 clear_float">
+                <!-- 购物车右边logo -->
+
+
+                <!-- 非TV LOGO -->
+                <a href="http://www.ocj.com.cn" class="g-main-logo">
+                    <!-- 根据c_code 显示不同的LOGO -->
+
+                    <img src="https://cdnimg.ocj.com.cn/common/webpc/image/tiplogo/cplogo0.png" />
+
+                </a>
+
+                <!-- TV LOGO -->
+
+                <div class="g-logo-slider">
+
+
+                    <!-- 团 -->
+
+                    <!-- 食品馆 -->
+
+                    <!-- 全球购 -->
+
+                    <!-- 嗨鸥看看 -->
+
+
+                    <!-- 名品馆 -->
+
+
+                    <!--  O+  -->
+
+
+                    <!--  看电影   -->
+
+
+                    <!--  新看电影   -->
+
+
+                    <!--  登陆,注册,购物车   -->
+
+                    <a href="javascript:;" target="_blank" class="slider-item">
+                        <img src="https://www.ocj.com.cn/common/theme/v1/images/space.gif" data-original="https://www.ocj.com.cn/image_site/shop/conts/8021/6741/9903/11464/1_20190619160247_7.jpg" target="_blank" onerror="this.src='https://www.ocj.com.cn/common/images/common/imageS.jpg'
+	 " />
+                    </a>
+                </div>
+
+
+                <!-- 样式，简单头长搜索框 -->
+                <div class="g-search-box">
+                    <div class="search-bar">
+
+                        <form name="search_form" id="search_form" onsubmit="return false">
+                            <input id="title_srch" type="text" class="keyword" name="keyword" placeholder="" autocomplete="off" size="20" maxlength="20" />
+                            <button id="tilte_submit">搜索</button>
+                        </form>
+                        <div class="relation-search" id="topsearch_tips" style="display:none"></div>
+                    </div>
+
+                    <div class="search-down">
+                        <span class="g-hotlist"><a href="javascript:;">销售排行榜</a></span>
+                        <!-- 搜索框下边的推荐 -->
+                        <ul class="keywords">
+
+                            <li>
+                                <a href="javascript:;">
+                                    <font color="新人福袋">免费赢康宁锅具</font>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;">
+                                    <font color="东方奥莱">东方奥莱</font>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;">
+                                    <font color="清凉酒水节">夏日精选</font>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;">
+                                    <font color="夏季家纺">夏凉床品</font>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;">
+                                    <font color="实惠新品周">实惠新品周</font>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;">
+                                    <font color="新人专享">新人专享</font>
+
+                                </a>
+                            </li>
+
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="g-header-mycart" id="g-header-mycart">
+                    <dl id="g-header-mycart-dl">
+                    </dl>
+                </div>
+
+                <!-- 购物车右边logo -->
+
+                <div class="headerCompLogoRight">
+
+                    <a href="javascript:;">
+                        <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20190515133952_83.jpg" alt="东方购物" alt="东方购物" />
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!--导航栏-->
+            <div class="g-header-menu">
+                <div class="g-container-1190 clear_float">
+                    <a class="g-header-tab g-all" href="javascript:;">全部商品分类<!-- <b class="icon-arrow-down9"></b> --></a>
+                    <a class='g-header-tab cur' href="javascript:;" title="首页">首页</a>
+                    <a class='g-header-tab' href="javascript:;" title="TV购物">TV购物</a>
+                    <a class="g-header-tab" href="javascript:;" title="团购">团购 </a>
+                    <a class="g-header-tab  g-global " href="javascript:;" title="全球购">全球购</a>
+
+                    <a id="shangchengMenu" class='g-header-tab' href="javascript:;">商城<!-- <span>新</span> --></a>
+
+                    <a class='g-header-tab' class="g-header-tab" href="javascript:;">特惠活动</a>
+
+                    <a class="g-header-tab" href="javascript:;" title="会员俱乐部">会员俱乐部</a>
+                    <a class="g-header-tab" href="javascript:;" title="企业官网">企业官网</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <input type="hidden" name="login" id="login" value="" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .mapArray {
+            margin: 4px 0;
+            width: 1190px;
+            height: 1526px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .mapArray table {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .background {
+            margin: 4px 0;
+            backgournd: #ffe9dc;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 197px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- 周年庆 -->
+    <div class="displayConent">
+
+
+
+        <!--侧边栏-->
+        <!-- 分类，tv节目表   -->
+
+        <div class="indexNavContentBox">
+            <div class="setColorChange"></div>
+            <div class="index-row-1 g-container-1190">
+                <div class="indexLeftNav">
+
+                    <div class="indexLeftNavBox indexLeftNavBox0">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe613;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:navBoxButton('/catalog/3521?domain_id=8021_6741_9914_1_11168_WASTE','','0','厨房用具、厨房电器');">厨房用具、厨房电器</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox1">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe607;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:navBoxButton('/catalog/145?domain_id=8021_6741_9914_2_11168_WASTE','','1','家居、家饰');">家居、家饰</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox2">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe617;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:navBoxButton('/catalog/161?domain_id=8021_6741_9914_3_11168_WASTE','','2','食品饮料');">食品饮料</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox3">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe627;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:navBoxButton('/catalog/142?domain_id=8021_6741_9914_4_11168_WASTE','','3','手机、数码、电脑');">手机、数码、电脑</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox4">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe606;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:navBoxButton('/catalog/141?domain_id=8021_6741_9914_5_11168_WASTE','','4','家用电器');">家用电器</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox5">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe602;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:navBoxButton('/catalog/162?domain_id=8021_6741_9914_6_11168_WASTE','','5','化妆品、洗护沐浴');">化妆品、洗护沐浴</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox6">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe624;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:;">服装、鞋靴、箱包、配饰</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox7">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe625;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:;">母婴、玩具、宠物</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox8">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe609;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:;">珠宝、收藏、钟表</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox9">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe620;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:;">保健品、户外运动、器械</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBox10">
+                        <div class="indexLeftNavBoxMask">
+                            <div class="hinffffff"></div>
+                        </div>
+
+                        <span class="hiconfont">&#xe61d;</span>
+                        <span class="indexLeftNavBoxButton"><a href="javascript:;">汽车、旅游、保险、服务</a></span>
+
+                        <div class="clear"></div>
+                    </div>
+
+
+
+                    <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg1">
+                        <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao1"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/frocejuxing.png" /></div>
+                        <div class="indexLeftNavBoxBgContent">
+                            <a href="javascript:;"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/logo3.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg0">
+                        <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao0"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/frocejuxing.png" /></div>
+                        <div class="indexLeftNavBoxBgContent">
+                            <a href="javascript:;"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/logo2.png" /></a>
+                        </div>
+                    </div>
+
+
+                    <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg2">
+                        <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao2"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/frocejuxing.png" /></div>
+                        <div class="indexLeftNavBoxBgContent">
+                            <a href="javascript:;"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/quanqiugoulogo.png" /></a>
+                        </div>
+                    </div>
+
+                    <div class="indexLeftNavBox indexLeftNavBoxBg indexLeftNavBoxBg3">
+
+                        <div class="hindexleftNavjiaobiao hindexleftNavjiaobiao4"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/frocejuxing.png" /></div>
+                        <div class="indexLeftNavBoxBgContent">
+                            <a href="javascript:;"><img src="https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/logo5.png" /></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="indexLeftNavShowConent">
+
+                    <div class="g-live-box">
+                        <div class="hIndexvideoNavChangeBox">
+                            <div class="hTvChangeBox">
+                                <div class="hTvChangeBoxButton" id="tv1"></div>
+                                <div class="hTvChangeBoxButton" id="tv2" style="display: none;"></div>
+                            </div>
+                            <div class="tv-product" id="hindexCommodity4tv1"></div>
+                            <div class="tv-product" id="hindexCommodity4tv2" style="display: none;"></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="hIndexvideoBanner" id="hindexProjectList9906_11130"></div>
+                        <div class="hIndexvideoBanner hIndexvideoBannerLogo" id="hindexProjectList9906_11131"></div>
+                    </div>
+
+
+
+
+
+
+
+</body>
