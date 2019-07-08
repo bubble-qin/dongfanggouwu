@@ -1,0 +1,469 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/* Tristan updates 20140408 start */
+
+.cl_box {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    left: 692px;
+    top: 36px;
+    width: 430px;
+    height: 630px;
+    background: url(../../images/shop/cl/cl_bg.png) no-repeat;
+}
+
+.cl_box.yt_cl_box {
+    background: url(../../images/shop/cl/cl_bg2.png) no-repeat;
+    height: 510px;
+}
+
+.cl_box.yt_cl_box .extra {
+    display: none;
+}
+
+.cl_box.yt_cl_box .operate {
+    background: none;
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+.cl_box .close_btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    width: 29px;
+    height: 29px;
+    background: url(../../images/shop/cl/cl_close_btn.jpg) no-repeat;
+}
+
+.cl_box .close_btn:hover {
+    background: url(../../images/shop/cl/cl_close_btn_on.jpg) no-repeat;
+}
+
+.cl_box .cont {
+    width: 360px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.cl_box .cont .glb_ttl {
+    color: #7da8c2;
+    font-size: 15px;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.cl_box .cont .prd_name {
+    color: #333;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.cl_box .gtips {
+    color: #708d9c;
+    margin-top: 0;
+    margin-bottom: 8px;
+    height: 14px;
+}
+
+.cl_box .gtips a {
+    color: #708d9c;
+    padding-left: 18px;
+    background: url(../../images/shop/cl/cl_icon3.jpg) no-repeat left bottom;
+}
+
+.cl_box .data {
+    width: 340px;
+    height: 265px;
+    padding: 10px 10px 15px 10px;
+    background: url(../../images/shop/cl/cl_cont_bg.jpg) no-repeat;
+}
+
+.cl_box .data .cl_item {
+    position: relative;
+    height: 40px;
+}
+
+.cl_box .data .oquan_item {
+    z-index: 10;
+}
+
+.cl_box .data .cl_item .cl_dt {
+    position: relative;
+    display: inline-block;
+    width: 145px;
+    padding-top: 12px;
+    color: #444c52;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+.cl_box .data .cl_item .cl_dt .amount {
+    position: absolute;
+    right: 2px;
+}
+
+.cl_box .data .cl_item .cl_dt .amount em {
+    color: #2196d9;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.cl_box .data .cl_item .cl_rsl {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cl_box .data .cl_item .cl_rsl .cl_value {
+    font-size: 16px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #2979ac;
+}
+
+.cl_box .data .cl_item .cl_rsl .cl_signal {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    color: #2979ac;
+    margin-right: 5px;
+}
+
+
+/*.cl_box .data .cl_item .cl_input{display:inline-block;width:90px;height:22px;padding-top:4px;padding-left:5px;padding-right:5px;background:url(../../images/shop/cl/cl_input_bg.jpg) no-repeat;vertical-align:4px;}*/
+
+.cl_box .data .cl_item .cl_input {
+    display: inline-block;
+    width: 120px;
+    height: 26px;
+    vertical-align: 4px;
+}
+
+.cl_box .data .cl_item .cl_input {
+    +display: inline;
+    vertical-align: 4px;
+}
+
+
+/*.cl_box .data .cl_item .cl_input input{width:88px;border:0;background:none;color:#2979ac;font-size:16px;font-family:Verdana, Geneva, sans-serif;font-weight:bold;text-align:right;padding-right:2px;}*/
+
+.cl_box .data .cl_item .cl_input input {
+    width: 114px;
+    height: 26px;
+    line-height: 26px;
+    padding-right: 6px;
+    background: url(../../images/shop/cl/cl_input_bg.jpg) no-repeat;
+    border: 0;
+    text-align: right;
+    font-size: 12px;
+    color: #9d9d9d;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.cl_box .data .cl_item .cl_input input.cl_focus {
+    font-size: 16px;
+    color: #2979ac;
+}
+
+.cl_box .data .price_item .cl_rsl {
+    right: 15px;
+    top: 10px;
+}
+
+.cl_box .data .price_item .cl_rsl .cl_value {
+    font-size: 19px;
+    color: #2979ac;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.cl_box .data .pre_item .cl_rsl {
+    right: 15px;
+    top: 8px;
+}
+
+.cl_box .data .oquan_item .cl_rsl {
+    right: 15px;
+    top: 8px;
+}
+
+.cl_box .data .oquan_item .cl_dt .amount {
+    color: #595a58;
+    right: 30px;
+}
+
+.cl_box .data .oquan_item .cl_dt .amount.no_view {
+    right: 2px;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view {
+    position: absolute;
+    right: 2px;
+    top: 14px;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_view_btn {
+    display: block;
+    width: 25px;
+    height: 12px;
+    background: url(../../images/shop/cl/cl_find.jpg) no-repeat;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_view_btn:hover {
+    background: url(../../images/shop/cl/cl_find_on.jpg) no-repeat;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_view_btn.on {
+    background: url(../../images/shop/cl/cl_find_on.jpg) no-repeat;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_viem_sub {
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: -50px;
+    top: 12px;
+    width: 300px;
+    border: 1px solid #229cdb;
+    background-color: #fff;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_viem_sub ul {
+    padding: 7px;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_viem_sub ul li {
+    position: relative;
+    padding: 3px 0;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_viem_sub ul li label {
+    margin-left: 3px;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_viem_sub ul li .go {
+    position: absolute;
+    right: 2px;
+    width: 50px;
+    padding: 1px 0;
+    text-align: center;
+    background-color: #229cdb;
+    color: #fff;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_viem_sub ul li .al {
+    cursor: default;
+    background-color: #68b2d9;
+}
+
+.cl_box .data .oquan_item .cl_dt .oquan_view .oquan_viem_sub ul li .al:hover {
+    text-decoration: none;
+}
+
+.cl_box .data .oquan_item .amount em {
+    font-style: normal;
+    color: #2196d9;
+    font-weight: bold;
+}
+
+.cl_box .data .int_item .cl_rsl,
+.cl_box .data .adv_item .cl_rsl {
+    right: 10px;
+    top: 8px;
+}
+
+.cl_box .data .fin_item .cl_dt {
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.cl_box .data .fin_item .cl_rsl {
+    right: 15px;
+    top: 14px;
+}
+
+.cl_box .data .fin_item .cl_rsl .cl_value {
+    font-size: 20px;
+    color: #3495d3;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.cl_box .data .fin_item .cl_rsl .cl_value .signal {
+    font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+}
+
+.cl_box .data .fin_item .cl_rsl .cl_signal {
+    font-size: 20px;
+}
+
+.cl_box .operate {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 16px;
+    background: url(../../images/shop/cl/cl_line_bg.jpg) no-repeat center bottom;
+}
+
+.cl_box .operate .buy_btn {
+    display: inline-block;
+    width: 172px;
+    height: 45px;
+    background: url(../../images/shop/cl/cl_buy_btn.jpg) no-repeat;
+    margin-right: 16px;
+}
+
+.cl_box .operate .add_btn {
+    display: inline-block;
+    width: 172px;
+    height: 45px;
+    background: url(../../images/shop/cl/cl_add_btn.jpg) no-repeat;
+}
+
+.cl_box .extra {}
+
+.cl_box .extra h3 {
+    color: #333;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.cl_box .extra .extra_item {
+    position: relative;
+    padding: 4px 0;
+}
+
+.cl_box .extra .extra_item .money {
+    position: absolute;
+    right: 2px;
+    color: #333;
+}
+
+.cl_box .extra .extra_item .money .num {
+    color: #249cdb;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.cl_box .extra .extra_item2 .money {
+    top: 9px;
+    *top: 9px;
+    top: 9px\0;
+}
+
+.cl_box .extra .total_extra_item {
+    text-align: right;
+    padding-right: 2px;
+    color: #333;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.cl_box .extra .total_extra_item span .ttl {
+    color: #333;
+    font-weight: bold;
+}
+
+.cl_box .extra .total_extra_item span .num {
+    color: #249cdb;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+}
+
+.cl_box .extra .extra_item .int_act {
+    margin-right: 25px;
+}
+
+.cl_box .extra .extra_item .int_icon {
+    margin-right: 6px;
+}
+
+.cl_box .extra .extra_item .int_icon2 {
+    _display: inline;
+    float: left;
+    margin-right: 6px;
+    margin-top: 2px;
+    *margin-top: 4px;
+}
+
+.cl_box .extra .extra_item .int_prd_name {
+    display: inline-block;
+    color: #333;
+    white-space: nowrap;
+}
+
+.cl_box .extra .extra_item .int_prd_name .int_prd_name_wrap {
+    display: inline-block;
+    width: 180px;
+    overflow: hidden;
+    vertical-align: -2px;
+    *vertical-align: 0;
+}
+
+.cl_box .extra .extra_item .int_prd_name .int_prd_name_wrap span {
+    color: #2196d9;
+    font-weight: bold;
+}
+
+.cl_box .extra .extra_item .imitate_select1 DL DT EM {
+    PADDING: 2px 30px 3px 15px;
+}
+
+.cl_box .extra .extra_item .imitate_select1 DL UL {
+    top: 24px;
+}
+
+.cl_box .extra .extra_item .imitate_select1 DL UL LI {
+    PADDING: 2px 15px 3px 15px;
+}
+
+.calculator {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.calculator .calculator_link {
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+    background: #229cdb url(../../images/shop/cl/cal_icon.jpg) no-repeat 2px center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 2px;
+    padding-left: 16px;
+}
+
+.cl_box .icon_wrap {
+    display: inline-block;
+    border-bottom: 1px dotted #333;
+    margin-left: 25px;
+}
+
+.cl_box .limit_icon {
+    display: inline-block;
+    margin-bottom: 1px;
+    background-color: #2196d9;
+    color: #fff;
+    padding: 0 2px;
+    font-weight: normal;
+}
+
+
+/*.cl_overlay{position:fixed;z-index:999;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:0.5;}*/
+
+
+/* Tristan updates 20140408 end */

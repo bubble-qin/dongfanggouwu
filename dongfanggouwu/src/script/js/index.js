@@ -112,6 +112,7 @@
         }, 10)
     })
 
+
     //tab  
 
     $('.hindexhuiyuanConentShowNavtabBarButton ').on('click', function() {

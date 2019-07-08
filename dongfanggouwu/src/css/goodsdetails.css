@@ -1,0 +1,65 @@
+html,
+body {
+    font-family: 'Microsoft YaHei', Arial;
+}
+
+.g_dt {
+    padding: 5px 10px;
+}
+
+.g_dt img {
+    border: 0px;
+    vertical-align: middle;
+}
+
+.g_dt span {
+    color: #333;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.showTip {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+
+.g_dt .showTip .tip {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../../images/shop/bg.mark.1.gif) 0px 0px no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+#showDiv {
+    position: absolute;
+    top: 19px;
+    padding: 10px;
+    left: -200px;
+    display: none;
+    width: 300px;
+    height: 100px;
+    background: #fff;
+    border: #229cdb 2px solid;
+    z-index: 999;
+    font-size: 12px;
+    color: #333;
+    overflow: auto;
+}
+
+.showDiv2 {
+    position: absolute;
+    top: 19px;
+    padding: 10px;
+    left: -200px;
+    width: 300px;
+    height: 100px;
+    background: #fff;
+    border: #229cdb 2px solid;
+    z-index: 999;
+    font-size: 12px;
+    color: #333;
+    overflow: auto;
+}
