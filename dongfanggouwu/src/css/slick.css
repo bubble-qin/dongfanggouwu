@@ -178,3 +178,7 @@
     /*-webkit-font-smoothing: antialiased;*/
     /*-moz-osx-font-smoothing: grayscale;*/
 }
+
+.slick-active {
+    opacity: 1;
+}

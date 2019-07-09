@@ -2425,12 +2425,16 @@ A:hover {
 }
 
 .imgzoom_window {
-    POSITION: absolute;
-    LEFT: 110%;
-    TOP: 40px;
     BACKGROUND: #FFF;
-    HEIGHT: auto;
-    Z-INDEX: 110
+    HEIGHT: 400px;
+    width: 400px;
+    Z-INDEX: 110;
+    position: absolute;
+    z-index: 5001;
+    left: 348px;
+    top: 0px;
+    overflow: hidden;
+    display: none;
 }
 
 .imgzoom_wrapper {
@@ -2459,15 +2463,16 @@ A:hover {
 
 .imgzoom_wrapper_image {
     DISPLAY: block;
-    POSITION: relative;
+    POSITION: absolute;
     OVERFLOW: hidden;
-    Z-INDEX: 110
+    Z-INDEX: 110;
+    width: 550px;
+    height: 550px;
 }
 
 .imgzoom_wrapper_image IMG {
     BORDER: 0px;
     DISPLAY: block;
-    POSITION: absolute;
     Z-INDEX: 101
 }
 

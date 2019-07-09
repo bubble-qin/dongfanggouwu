@@ -13,12 +13,13 @@
     <link rel="icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="https://cdnimg.ocj.com.cn/common/images/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="https://cdnimg.ocj.com.cn/common/images/favicon.png">
-    <link type="text/css" href="https://cdnimg.ocj.com.cn/common/theme/v1/css/global20140417.css" rel="stylesheet">
-    <link type="text/css" href="https://cdnimg.ocj.com.cn/common/theme/v1/css/global-v4.css" rel="stylesheet">
-    <link type="text/css" href="https://cdnimg.ocj.com.cn/common/theme/v1/css/common.css" rel="stylesheet">
-    <link type="text/css" href="https://cdnimg.ocj.com.cn/common/webpc/css/slick.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/global565.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/season.css">
+    <link rel="stylesheet" href="css/slick.css">
 
     <link type="text/css" href="/common/theme/v1/css/icon-style.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/details-v.css">
@@ -54,11 +55,7 @@
             -->
                 <!--暂时不上线 end-->
                 <div class="user_info" id="user_info">
-                    <script type="text/javascript" shell-observer="0.11634373296091338">
-                        if ("false" == "true") {
-                            $("#suggesty").show();
-                        }
-                    </script>
+
 
 
 
@@ -382,20 +379,7 @@
                 <script type="text/javascript" src="https://cdnimg.ocj.com.cn/common/js/jplayer/jquery.jplayer.js"></script>
                 <script type="text/javascript" src="https://cdnimg.ocj.com.cn/common/js/jplayer/ocj_musicJplayer.js"></script>
 
-                <script type="text/javascript">
-                    //浏览器兼容性问题
-                    var Sysnav = {};
-                    var uav = navigator.userAgent.toLowerCase();
-                    var sn;
-                    (sn = uav.match(/msie ([\d.]+)/)) ? Sysnav.ie = sn[1]:
-                        (sn = uav.match(/firefox\/([\d.]+)/)) ? Sysnav.firefox = sn[1] :
-                        (sn = uav.match(/chrome\/([\d.]+)/)) ? Sysnav.chrome = sn[1] :
-                        (sn = uav.match(/opera.([\d.]+)/)) ? Sysnav.opera = sn[1] :
-                        (sn = uav.match(/version\/([\d.]+).*safari/)) ? Sysnav.safari = sn[1] : 0;
-                    if (Sysnav.ie) {
-                        $(".hsoundPlayer").hide();
-                    }
-                </script>
+
             </div>
 
             <!-- 员工意见提交 -->
@@ -409,11 +393,7 @@
 
 
 
-        <script>
-            function myocjhref(link) {
-                window.location.href = link + "?ts=" + new Date().getTime();
-            }
-        </script>
+
         <link type="text/css" href="/common/webpc/css/index/season0.css" rel="stylesheet">
         <!-- banner顶通 -->
 
@@ -492,13 +472,7 @@
                         </form>
 
                         <div class="relation-search" id="topsearch_tips" style="display:none"></div>
-                        <script>
-                            $(function() {
-                                $('#title_srch').bind('input propertychange', function() {
-                                    showHotWords($(this).val());
-                                });
-                            });
-                        </script>
+
 
 
 
@@ -668,49 +642,7 @@
                         </dd>
 
 
-                        <script shell-observer="0.3247921865315295">
-                            var settleupProducts = $('.g-settleup-content').find('.product-content').sliderFade({
-                                MainGiftArrs: '.arr',
-                                MainGifts: '.list',
-                                MainGiftIndex: 0,
-                                arrNext: '.g-arr-next-small',
-                                arrPrev: '.g-arr-prev-small',
-                                ifPage: true
-                            });
-                            var settleupProductsImgs = settleupProducts.find('img.adaptive').imgAdaptive({
-                                parentWidth: 60,
-                                parentHeight: 60
-                            });
 
-
-                            //删除top  购物车商品
-                            function top_delCar(cart_seq) {
-                                jQuery.ajax({
-                                    type: "POST",
-                                    url: "/delCartAjaxDo.jhtml",
-                                    dataType: "json",
-                                    data: {
-                                        "cart_seq": cart_seq
-                                    },
-                                    success: function(data) {
-                                        if ('needLogin' == data.errorcode) {
-                                            alert("操作超时，请重新登录");
-                                            window.location.reload();
-                                            return;
-                                        }
-                                        $.ajax({
-                                            url: "/common/getTopCarts2014?nowtime=" + new Date().getTime(),
-                                            type: "GET",
-                                            data: "",
-                                            success: function(respon) {
-                                                $("#g-header-mycart-dl").html(respon);
-                                            },
-                                            error: function(er) {}
-                                        });
-                                    }
-                                });
-                            }
-                        </script>
 
                     </dl>
                 </div>
@@ -914,8 +846,8 @@
             <input type="hidden" name="cust_no" id="cust_no" value="">
             <div class="pv_shop_detail">
                 <div class="pv_shop_detail_title">
-                    <h1>
-                        <span class="flag flag1" title="TV商品"></span>壹品尚尊 “蓝色妖娆”豪华镶嵌托帕石套组（吊坠+戒指） <span class="tips"></span></h1>
+                    <h1 id="loadtitle">
+                        <span class="flag flag1" title="TV商品"></span><span class="tips"></span></h1>
                 </div>
                 <div class="pv_shop_detail_info">
                     <!-- left-box  -->
@@ -927,15 +859,15 @@
                                     <div class="corner_icon1">
 
                                         <a href="https://cdnimg.ocj.com.cn/item_images/item/15/26/6262/15266262-L.jpg" mark="imgzoom" imgzoom_width="550" imgzoom_height="550" rel="gallery" init="done" title="" style="outline-style: none; text-decoration: none;">
-                                            <div class="imgzoom_pad" shell-observer="0.3346482546948377"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/26/6262/15266262-L.jpg" alt="" class="img" jqzoom_parallel="true" jqzoom_outerwidth="338" jqzoom_outerheight="338" width="338" shell-observer="0.8817372659016645"
+                                            <div class="imgzoom_pad" shell-observer="0.3346482546948377"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/26/6262/15266262-L.jpg" alt="" class="img" id="detailspic" jqzoom_parallel="true" jqzoom_outerwidth="338" jqzoom_outerheight="338" width="338" shell-observer="0.8817372659016645"
                                                     title="" style="opacity: 1;">
-                                                <div class="imgzoom_pup" shell-observer="0.06031569623617261" style="top: 0px; left: 0px; width: 338px; height: 338px; position: absolute; border-width: 1px; display: none;"></div>
+                                                <div class="imgzoom_pup" shell-observer="0.06031569623617261"></div>
                                                 <div class="imgzoom_preload" shell-observer="0.3280611691053945" style="visibility: hidden; top: 147.5px; left: 124px; position: absolute;">Loading zoom</div>
                                             </div>
-                                            <div class="imgzoom_window" shell-observer="0.815337329376838" style="position: absolute; z-index: 5001; left: 348px; top: 0px; display: none;">
+                                            <div class="imgzoom_window" shell-observer="0.815337329376838">
                                                 <div class="imgzoom_wrapper" style="width: 550px;">
-                                                    <div class="imgzoom_wrapper_title" style="width: 100%; position: absolute; display: none;"></div>
-                                                    <div class="imgzoom_wrapper_image" style="width: 100%; height: 550px;"><img src="https://cdnimg.ocj.com.cn/item_images/item/15/26/6262/15266262-L.jpg?random=67303" shell-observer="0.06344597816233888" style="position: absolute; border: 0px; display: block; left: -5000px; top: 0px;"></div>
+                                                    <div class="imgzoom_wrapper_title" style="width: 100%; position: absolute;"></div>
+                                                    <div class="imgzoom_wrapper_image "><img src="https://cdnimg.ocj.com.cn/item_images/item/15/26/6262/15266262-L.jpg?random=67303" id="detailsbpic" shell-observer="0.06344597816233888" style="position: absolute; border: 0px; display: block; left: 0px; top: 0px;"></div>
                                                 </div>
                                             </div>
                                         </a>
@@ -1022,7 +954,7 @@
 
                                     <!-- 电子礼品卡  显示价格区间 -->
 
-                                    <span class="price">￥2,980</span>
+                                    <span class="price">￥<em class='pricedetails'></em></span>
 
                                 </dd>
                             </dl>
@@ -1164,193 +1096,18 @@
 
                                             </div>
                                             <div id="town" class="sel_div _n" style="display: none;" shell-observer="0.5945415042787345"><span id="001" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.4753034171029138">闵行区</span><span id="003" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.655248302789065">杨浦区</span>
-                                                <span
-                                                    id="004" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.4296760204824044">徐汇区</span><span id="005" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.39055045402003863">松江区</span><span id="006" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.17362441237221593">青浦区</span>
-                                                    <span
-                                                        id="008" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.3593196964174932">普陀区</span><span id="011" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.8364582814626613">静安区</span><span id="012" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.38052844102691386">金山区</span>
-                                                        <span
-                                                            id="013" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.3613988067019487">嘉定区</span><span id="015" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.8047335091649972">虹口区</span><span id="016" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.9623105995671575">奉贤区</span>
-                                                            <span
-                                                                id="017" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.9842600541352675">长宁区</span><span id="900" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.14714290576129896">宝山区</span><span id="007" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.4387451028499758">浦东新区</span>
-                                                                <span
-                                                                    id="014" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.6956577188903177">新黄浦区</span>
+                                                <span id="004" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.4296760204824044">徐汇区</span><span id="005" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.39055045402003863">松江区</span>
+                                                <span id="006" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.17362441237221593">青浦区</span>
+                                                <span id="008" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.3593196964174932">普陀区</span><span id="011" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.8364582814626613">静安区</span>
+                                                <span id="012" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.38052844102691386">金山区</span>
+                                                <span id="013" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.3613988067019487">嘉定区</span><span id="015" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.8047335091649972">虹口区</span>
+                                                <span id="016" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.9623105995671575">奉贤区</span>
+                                                <span id="017" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.9842600541352675">长宁区</span><span id="900" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.14714290576129896">宝山区</span>
+                                                <span id="007" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.4387451028499758">浦东新区</span>
+                                                <span id="014" class="n_loc " onclick="chooseDelyArea(this);" shell-observer="0.6956577188903177">新黄浦区</span>
                                             </div>
 
-                                            <script type="text/javascript" shell-observer="0.10524181610546801">
-                                                var cities = "2";
-                                                $(document).ready(function() {
-                                                    if (cities > 0) {
-                                                        var defTown = null;
-                                                        $("#city").find("span").each(function(i) {
-                                                            var val = $(this).attr("id");
-                                                            if (val == '001') {
-                                                                defTown = this;
-                                                            }
-                                                        });
-                                                        if (defTown != null) {
-                                                            initTown('10', '001', defTown, '0');
-                                                        }
-                                                        if ("0" == "0") {
-                                                            $(".sel_ul").find("li").eq(1).addClass("on").siblings().removeClass("on");
-                                                            $("#city").show();
-                                                            $("#town").hide();
-                                                        }
-                                                        $("#lgroup_code").val('10');
-                                                        $("#mgroup_code").val('001');
-                                                        $("#delyareatxt").html($(".sel_ul").find("li").eq(0).html());
-                                                    } else {
-                                                        $(".sel_ul").find("li").eq(0).addClass("on");
-                                                    }
-                                                    $(".sel_ul").find("li").each(function(i) {
-                                                        $(this).click(function() {
-                                                            $(this).addClass("on").siblings().removeClass("on");
-                                                            if (i == 0) {
-                                                                $("#prov").show();
-                                                                $("#city").hide();
-                                                                $("#town").hide();
-                                                            } else if (i == 1) {
-                                                                $("#prov").hide();
-                                                                $("#city").show();
-                                                                $("#town").hide();
-                                                            } else if (i == 2) {
-                                                                $("#prov").hide();
-                                                                $("#city").hide();
-                                                                $("#town").show();
-                                                            }
-                                                        });
-                                                    });
-                                                    $(".num_con").find("span").each(function() {
-                                                        var st = $(this).html();
-                                                        if (st == '上海') {
-                                                            $(this).addClass("hover");
-                                                        }
-                                                    });
-                                                    raden20140122();
-                                                });
 
-                                                function initCity(pid, obj) {
-                                                    $(".sel_ul").find("li").eq(0).html($(obj).html());
-                                                    $(".sel_ul").find("li").eq(1).html("请选择").addClass("on").siblings().removeClass("on");
-                                                    $(".sel_ul").find("li").eq(2).html("请选择");
-                                                    $(".num_con").find("span").removeClass("hover");
-                                                    $(obj).addClass("hover");
-                                                    $("#lgroup_code").val(pid);
-                                                    $.cookie("_userSgroup", null, {
-                                                        path: "/",
-                                                        domain: 'ocj.com.cn'
-                                                    });
-                                                    $.ajax({
-                                                        url: "/common/initcities",
-                                                        type: "GET",
-                                                        data: {
-                                                            "item_code": "15266262",
-                                                            "provid": pid
-                                                        },
-                                                        success: function(data) {
-                                                            if (data == 'NODATA') {
-                                                                $("#city").html("该商品不在可配送范围");
-                                                            } else {
-                                                                $("#city").html(data);
-                                                            }
-                                                            $("#town").html("该商品不在可配送范围");
-                                                        },
-                                                        error: function(re) {}
-                                                    });
-                                                    $("#prov").hide();
-                                                    $("#city").show();
-                                                }
-
-                                                function initTown(pid, cid, obj, fg) {
-                                                    var defsc = "";
-                                                    if (fg == '1') {
-                                                        $.cookie("_userSgroup", null, {
-                                                            path: "/",
-                                                            domain: 'ocj.com.cn'
-                                                        });
-                                                        defsc = '';
-                                                    }
-                                                    $(".sel_ul").find("li").eq(1).html($(obj).html());
-                                                    $(".sel_ul").find("li").eq(2).html("请选择").addClass("on").siblings().removeClass("on");
-                                                    $(obj).addClass("hover").siblings().removeClass("hover");
-                                                    $("#mgroup_code").val(cid);
-                                                    lgroup_code = pid;
-                                                    mgroup_code = cid;
-                                                    sgroup_code = defsc;
-                                                    mgroup_name = $(obj).html();
-                                                    $.ajax({
-                                                        url: "/common/inittowns",
-                                                        type: "GET",
-                                                        data: {
-                                                            "item_code": "15266262",
-                                                            "provid": pid,
-                                                            "cityid": cid,
-                                                            "defScode": defsc
-                                                        },
-                                                        success: function(data) {
-                                                            if (data == 'NODATA') {
-                                                                $("#town").html("该商品不在可配送范围");
-                                                            } else {
-                                                                $("#town").html(data);
-                                                                $("#town").find("span").each(function() {
-                                                                    if ($(this).hasClass('hover')) {
-                                                                        $(".sel_ul").find("li").eq(2).html($(this).html());
-                                                                        sgroup_name = $(this).html();
-                                                                    }
-                                                                });
-                                                            }
-                                                        },
-                                                        error: function(re) {}
-                                                    });
-                                                    $("#city").hide();
-                                                    $("#town").show();
-                                                }
-
-                                                function raden20140122() {
-                                                    //area 
-                                                    var ul = $(".sel_ul")[0],
-                                                        li = ul.getElementsByTagName("li"),
-                                                        a = $(".sel_area")[0],
-                                                        b = $(".sel_area_cont")[0],
-                                                        del = $(".sel_area_cont img.del")[0],
-                                                        i;
-                                                    a.onmouseover = function() {
-                                                        b.style.display = 'block';
-                                                        a.getElementsByTagName("dl")[0].className = "locSel";
-                                                    }
-                                                    document.body.onclick = function(e) {
-                                                        var e = e || window.event,
-                                                            tar = e.target || e.srcElement;
-                                                        if (!par(tar, a) || (tar == del)) {
-                                                            b.style.display = "none";
-                                                            if ($(".locSel")[0]) {
-                                                                $(".locSel")[0].className = '';
-                                                            };
-                                                        };
-                                                    };
-                                                    for (i = 0; i < li.length; i++) {
-                                                        li[i].onclick = function() {
-                                                            clear();
-                                                            this.className = "on";
-                                                        }
-                                                    };
-
-                                                    function clear() {
-                                                        for (i = 0; i < li.length; i++) {
-                                                            li[i].className = "";
-                                                        }
-                                                    };
-
-                                                    function par(dom, tar) {
-                                                        if (dom == tar) {
-                                                            return true;
-                                                        } else if (dom == document) {
-                                                            return false;
-                                                        } else {
-                                                            return par(dom.parentNode, tar)
-                                                        };
-                                                    };
-                                                }
-                                            </script>
                                         </div>
                                     </div>
                                     <p class="msg" id="checkQty"></p>
@@ -1432,54 +1189,7 @@
 
                                 </dd>
                             </dl>
-                            <script type="text/javascript">
-                                function changeQty(qtys) {
-                                    var qtyvalue = $("#qty").val();
-                                    var unitsize = $("#unitsize").val();
-                                    var order_min_qty = $("#order_min_qty").val();
 
-                                    //判断ic商品除包装商品外最大订购数量
-                                    var limit_qty = $("#limit_qty").val();
-                                    if (typeof(limit_qty) == "undefined" || limit_qty == '') {
-                                        limit_qty = 99;
-                                    }
-                                    if (parseInt(unitsize) == 1 && parseInt(qtyvalue) <= parseInt(order_min_qty) && parseInt(qtys) < 0) {
-                                        //alert("该商品最小订购数量为"+order_min_qty+"件");
-                                        $(".minus").addClass("c_disable");
-                                        return;
-                                    }
-                                    //减箭头变灰
-                                    if (parseInt(unitsize) == 1 && parseInt(qtyvalue) - 1 <= parseInt(order_min_qty) && parseInt(qtys) < 0) {
-                                        $(".minus").addClass("c_disable");
-                                    }
-                                    //加箭头控制减箭头变亮
-                                    if (parseInt(qtyvalue) >= parseInt(order_min_qty) && parseInt(qtys) > 0) {
-                                        $(".minus").removeClass("c_disable");
-                                    }
-
-                                    if (parseInt(qtyvalue) >= parseInt(limit_qty) && parseInt(qtys) > 0) {
-                                        alert("该类型商品单笔订单最多只可订购" + parseInt(limit_qty) + "件");
-                                        return;
-                                    }
-
-                                    if ("true" == "true" && qtyvalue >= 10 && qtys > 0) {
-                                        alert('单笔订单最多只可订购10件！');
-                                        return;
-                                    }
-                                    if (qtyvalue >= 99 && qtys > 0) {
-                                        alert('不能输入99个以上商品');
-                                        return;
-                                    }
-                                    if (isNaN(qtyvalue)) {
-                                        $("#qty").val(1);
-                                    } else {
-                                        if (qtys > 0 || qtyvalue > 1) {
-                                            $("#qty").val(qtyvalue * 1 + qtys);
-                                            $("#orderQty").val($("#qty").val());
-                                        }
-                                    }
-                                }
-                            </script>
 
                             <!-- 二维码 -->
 
@@ -1574,8 +1284,7 @@
                                     <div class="showTip" onmouseover="overShow()" onmouseout="outHide()">
                                         <span class="tip"></span>
                                         <div id="showDiv">1)商品一经售出，若无质量问题，不接受7天无理由退换货。<br shell-observer="0.8920369626106763">2)商品质量问题，自实际收到商品之日起7天内可退换货，15天内可换货。<br shell-observer="0.03143214744017708">3)注意事项<br shell-observer="0.7730350688556296">钻石、黄金、手表、珠宝首饰、奢侈品、收藏品及个人配饰类商品，一经售出非质量问题概不退换货。
-                                            <br
-                                                shell-observer="0.631943395436136">请您在收到商品时仔细查验商品，您签收后商品将不接受无理由退货。<br shell-observer="0.6745877007840528">4)凡是涉及需要顾客将商品、购物凭证、包装等返回我司办理退换货的，另需附上订购编号、接收人、联系方式。</div>
+                                            <br shell-observer="0.631943395436136">请您在收到商品时仔细查验商品，您签收后商品将不接受无理由退货。<br shell-observer="0.6745877007840528">4)凡是涉及需要顾客将商品、购物凭证、包装等返回我司办理退换货的，另需附上订购编号、接收人、联系方式。</div>
                                     </div>
                                 </div>
                             </div>
@@ -1615,39 +1324,6 @@
                         <input type="hidden" name="source_obj" id="source_obj" value="">
                     </form>
 
-                    <script type="text/javascript">
-                        $(document).ready(function() {
-                            var aa = "1526-6262".replace('-', '')
-                            $.ajax({
-                                type: "GET",
-                                url: "/items/return/rules/" + aa,
-                                success: function(data) {
-                                    if (data.code == "200") {
-                                        var detail = data.data.titleName
-                                        $("#dea").html(detail)
-                                        var text = data.data.content.replace(/\n/g, "<br>")
-                                        $("#showDiv").html(text)
-                                    } else {
-                                        $("#returnDetail").css("display", "none");
-                                    }
-                                },
-                                error: function(e) {
-                                    console.log(e);
-                                }
-                            });
-
-                        })
-
-                        function overShow() {
-                            $("#showDiv").css('display', 'block')
-                            $(".tip").css('backgroundPositionX', '-11px')
-                        }
-
-                        function outHide() {
-                            $("#showDiv").css('display', 'none')
-                            $(".tip").css('backgroundPositionX', '0px')
-                        }
-                    </script>
                     <!-- right-box -->
 
                     <div class="right_box">
@@ -2056,7 +1732,8 @@
             <div class="cl_box"></div>
         </div>
     </div>
-
+    <script src="./script/thirdplugins/jquery.min.js"></script>
+    <script src="./script/js/details.js"></script>
 </body>
 
 </html>

@@ -155,7 +155,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.prev.1.gif);
+    BACKGROUND: url(../img/bg.prev.1.gif);
     POSITION: absolute;
     TOP: 18px;
     LEFT: 10px;
@@ -166,7 +166,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.next.1.gif);
+    BACKGROUND: url(../img/bg.next.1.gif);
     POSITION: absolute;
     TOP: 18px;
     RIGHT: 10px;
@@ -211,7 +211,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.prev.1.gif);
+    BACKGROUND: url(../img/bg.prev.1.gif);
     POSITION: absolute;
     TOP: 18px;
     LEFT: 10px;
@@ -222,7 +222,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.next.1.gif);
+    BACKGROUND: url(../img/bg.next.1.gif);
     POSITION: absolute;
     TOP: 18px;
     RIGHT: 10px;
@@ -694,7 +694,7 @@
     MARGIN-TOP: 10px;
     FONT-SIZE: 16px;
     COLOR: #fff;
-    BACKGROUND: url(../../images/shop/bg.button.3.gif);
+    BACKGROUND: url(../img/bg.button.3.gif);
     CURSOR: pointer
 }
 
@@ -708,7 +708,7 @@
     MARGIN-LEFT: 10px;
     FONT-SIZE: 16px;
     COLOR: #fff;
-    BACKGROUND: url(../../images/shop/bg.button.4.gif);
+    BACKGROUND: url(../img/bg.button.4.gif);
     CURSOR: pointer
 }
 
@@ -2816,7 +2816,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.prev.1.gif);
+    BACKGROUND: url(../img/bg.prev.1.gif);
     POSITION: absolute;
     TOP: 28px;
     LEFT: 10px;
@@ -2827,7 +2827,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.next.1.gif);
+    BACKGROUND: url(../img/bg.next.1.gif);
     POSITION: absolute;
     TOP: 28px;
     RIGHT: 10px;
@@ -2866,7 +2866,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.prev.1.gif);
+    BACKGROUND: url(../img/bg.prev.1.gif);
     POSITION: absolute;
     TOP: 28px;
     LEFT: 10px;
@@ -2877,7 +2877,7 @@
     WIDTH: 10px;
     HEIGHT: 19px;
     DISPLAY: block;
-    BACKGROUND: url(../../images/shop/bg.next.1.gif);
+    BACKGROUND: url(../img/bg.next.1.gif);
     POSITION: absolute;
     TOP: 28px;
     RIGHT: 10px;
@@ -3018,6 +3018,16 @@
     LINE-HEIGHT: 14px;
     COLOR: #fff;
     BACKGROUND: url(../../images/shop/bg.limit.icon.gif) left center no-repeat;
+}
+
+.imgzoom_pup {
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-width: 1px;
+    display: none;
 }
 
 
