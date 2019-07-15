@@ -52,7 +52,7 @@
     </div>
 </div>
 </div>
-            
+
             `
         });
         $('.listdata1').html($html1);

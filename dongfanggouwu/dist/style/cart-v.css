@@ -1,3 +1,8 @@
+.cf:after,
+input.hide {
+    visibility: hidden
+}
+
 em {
     font-style: normal
 }
@@ -11,7 +16,6 @@ em {
 }
 
 .cf:after {
-    visibility: hidden;
     display: block;
     font-size: 0;
     content: " ";
@@ -19,22 +23,15 @@ em {
     height: 0
 }
 
-.cf {
-    *zoom: 1
-}
-
 .pv_cart_main {
     width: 1190px;
     margin: 0 auto
 }
 
-.pv_cart_header {}
-
 .pv_cart_header .logo {
     width: 200px;
     height: 70px;
-    background: url(../img/bg.cart.main.png) no-repeat 0 -177px;
-    _background-image: url(../img/bg.cart.main.png);
+    background: url(../img/bg.cart.main.png) 0 -177px no-repeat;
     position: relative
 }
 
@@ -46,8 +43,7 @@ em {
     text-align: center;
     top: -2px;
     left: 76px;
-    background: url(../img/bg.cart.main.png) no-repeat 0 -250px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
+    background: url(../img/bg.cart.main.png) 0 -250px no-repeat;
     line-height: 29px;
     font-family: Verdana, Geneva, sans-serif
 }
@@ -63,7 +59,6 @@ em {
     width: 745px;
     height: 40px;
     background: url(../img/bg.cart.main.png) no-repeat;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
     margin-top: 20px
 }
 
@@ -93,9 +88,6 @@ em {
     background-position: 0 -610px
 }
 
-
-/****************************鎴戠殑璐墿杞﹂〉****************************/
-
 .pv_mycart_info {
     width: 1188px;
     height: 44px;
@@ -111,15 +103,14 @@ em {
     width: 12px;
     height: 12px;
     margin: 16px 16px 0 13px;
-    background: url(../img/bg.cart.main.png) no-repeat -1px -286px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
+    background: url(../img/bg.cart.main.png) -1px -286px no-repeat
 }
 
 .pv_mycart_info .money ul {
     float: left;
     height: 16px;
     line-height: 16px;
-    padding: 14px 0 14px 0
+    padding: 14px 0
 }
 
 .pv_mycart_info .money ul li {
@@ -141,17 +132,22 @@ em {
     text-align: center;
     font-size: 11px;
     line-height: 12px;
-    background: #D50000;
-    *font-size: 12px;
-    _overflow: hidden
+    background: #D50000
 }
 
 .pv_mycart_info .money ul li span.blue {
     font-size: 16px;
-    font-family: 'Verdana';
+    font-family: Verdana;
     color: #239cdc;
-    font-weight: bold;
+    font-weight: 700;
     margin-right: 3px
+}
+
+.pv_cart_balance,
+.pv_cart_my_collect,
+.pv_cart_mycart_box,
+.pv_cart_recommend {
+    font-family: Verdana, Geneva, sans-serif
 }
 
 .pv_mycart_info .money ul li span.yuan {
@@ -172,11 +168,6 @@ em {
 
 .pv_mycart_info .money ul li.quan span.icon_ji {
     background: #239CDC
-}
-
-.pv_mycart_info .money .login_tip {
-    line-height: 43px;
-    color: #505966
 }
 
 .pv_mycart_info .money .login_tip {
@@ -252,25 +243,23 @@ em {
 
 .pv_cart_main .cols7 {
     width: 116px;
-    float: left;
-    _width: 100px
+    float: left
 }
 
 .pv_cart_mycart_box {
     width: 1188px;
     border: 1px solid #c6c9cc;
     border-top: none;
-    border-bottom: none;
-    font-family: Verdana, Geneva, sans-serif
+    border-bottom: none
 }
 
 .pv_cart_mycart_box .cart_main_block {
     width: 100%;
-    border-bottom: 2px solid #686868;
+    border-bottom: 2px solid #686868
 }
 
 .pv_cart_mycart_box .food_pack_1 {
-    border-bottom: 1px solid #686868;
+    border-bottom: 1px solid #686868
 }
 
 .pv_cart_mycart_box .block_title {
@@ -282,7 +271,7 @@ em {
     float: left;
     width: 1072px;
     height: 40px;
-    border-right: 1px solid #d9d9db;
+    border-right: 1px solid #d9d9db
 }
 
 .pv_cart_mycart_box .block_title .scroll {
@@ -299,16 +288,14 @@ em {
 .pv_cart_mycart_box .block_title .scroll span {
     float: right;
     line-height: 39px;
-    height: 39px;
+    height: 39px
 }
 
 .pv_cart_mycart_box .block_title .scroll .dot {
     margin: 13px 13px 0 18px;
     height: 13px;
     padding-bottom: 1px;
-    border-bottom: 1px dotted #757677;
-    *width: 55px;
-    *overflow: hidden
+    border-bottom: 1px dotted #757677
 }
 
 .pv_cart_mycart_box .block_title .scroll .dot .cut_gift {
@@ -317,8 +304,7 @@ em {
     background: #31bf00;
     color: #fff;
     line-height: 13px;
-    text-align: center;
-    *line-height: 14px;
+    text-align: center
 }
 
 .pv_cart_mycart_box .block_title .scroll .dot .zi {
@@ -338,7 +324,7 @@ em {
 }
 
 .pv_cart_mycart_box .block_title .scroll span.btn_download {
-    margin-left: 8px;
+    margin-left: 8px
 }
 
 .pv_cart_mycart_box .block_title .scroll a:hover {
@@ -353,27 +339,24 @@ em {
 
 .pv_cart_mycart_box .block_list {
     width: 1188px;
-    height: 100%;
+    height: 100%
 }
 
 .pv_cart_mycart_box .block_list .left_block_list {
     width: 1072px;
     float: left;
-    border-right: 1px solid #d6dadd;
+    border-right: 1px solid #d6dadd
 }
 
 .pv_cart_mycart_box .block_list .left_block_list .list {
     border-top: 1px solid #ebeef0;
     font-size: 12px;
-    color: #505966;
+    color: #505966
 }
 
 .pv_cart_mycart_box .block_list .left_block_list .list .product {
     padding: 20px 0
 }
-
-
-/*绗竴鍒�:鍟嗗搧*/
 
 .pv_cart_mycart_box .list .cols1 input {
     margin: 24px 0 0 13px
@@ -382,12 +365,12 @@ em {
 .pv_cart_mycart_box .list .cols1 .pic {
     float: left;
     margin: 0 0 0 18px;
-    border: 1px solid #fff;
+    border: 1px solid #fff
 }
 
 .pv_cart_mycart_box .list .cols1 .pic img {
     height: 60px;
-    width: 60px;
+    width: 60px
 }
 
 .pv_cart_mycart_box .list .cols1 .detail {
@@ -406,14 +389,14 @@ em {
     margin-top: 3px;
     height: 17px;
     width: 280px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .name i {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     color: #FF6C6C;
-    padding-right: 3px;
+    padding-right: 3px
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .info {
@@ -427,7 +410,6 @@ em {
     width: 57px;
     height: 17px;
     background: url(../img/bg.cart.main.png) no-repeat;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
     margin-right: 5px
 }
 
@@ -455,12 +437,8 @@ em {
 }
 
 .pv_cart_mycart_box .add_buy .cols1 .pic {
-    margin: 0 0 0 44px;
-    *margin: 0 0 0 51px;
+    margin: 0 0 0 44px
 }
-
-
-/*绗簩鍒�:绉垎*/
 
 .pv_cart_mycart_box .list .cols2 .credit,
 .pv_cart_mycart_box .list .cols2 .cu {
@@ -500,7 +478,7 @@ em {
     width: 11px;
     height: 11px;
     position: absolute;
-    background: url(../../images/cart/bg.cart.question_icon.gif) no-repeat 0 -15px;
+    background: url(../../images/cart/bg.cart.question_icon.gif) 0 -15px no-repeat;
     top: 1px;
     cursor: pointer
 }
@@ -521,8 +499,7 @@ em {
     position: absolute;
     padding: 5px;
     top: 12px;
-    left: -160px;
-    *padding-top: 12px
+    left: -160px
 }
 
 .pv_cart_mycart_box .list .cols2 .credit .detail_on .credit_detail_box {
@@ -530,7 +507,7 @@ em {
 }
 
 .pv_cart_mycart_box .list .cols2 .credit .credit_detail .row {
-    margin: 6px 0;
+    margin: 6px 0
 }
 
 .pv_cart_mycart_box .list .cols2 .credit .credit_detail .row1 {
@@ -545,8 +522,7 @@ em {
 
 .pv_cart_mycart_box .list .cols2 .credit .credit_detail span {
     float: left;
-    line-height: 12px;
-    *line-height: 14px
+    line-height: 12px
 }
 
 .pv_cart_mycart_box .list .cols2 .credit .credit_detail .cu {
@@ -573,7 +549,12 @@ em {
 
 .pv_cart_mycart_box .list .cols2 .credit .credit_detail span.blue {
     color: #229CDB;
-    font-weight: bold
+    font-weight: 700
+}
+
+.pv_cart_mycart_box .list .cols3 .price_now b,
+.pv_cart_mycart_box .list .cols5 span b {
+    font-weight: 400
 }
 
 .pv_cart_mycart_box .list .cols2 .credit .credit_detail .right_col em {
@@ -609,48 +590,39 @@ em {
 }
 
 .pv_cart_mycart_box .list .cols2 .credit .credit_detail .notice p b {
-    font-weight: normal;
+    font-weight: 400;
     color: #EA0505
 }
 
-
-/*绗笁鍒�:浠锋牸楦ュ埜*/
-
 .pv_cart_mycart_box .list .cols3 {
     position: relative;
-    min-height: 40px;
-    _height: 10px;
+    min-height: 40px
 }
 
 .pv_cart_mycart_box .list .cols3 span {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 100%
 }
 
 .pv_cart_mycart_box .list .cols3 .price_old {
     top: 2px;
     color: #96999e;
     text-align: center;
-    text-decoration: line-through;
+    text-decoration: line-through
 }
 
 .pv_cart_mycart_box .list .cols3 .price_now {
     top: 22px;
     color: #505968;
-    text-align: center;
-}
-
-.pv_cart_mycart_box .list .cols3 .price_now b {
-    font-weight: normal
+    text-align: center
 }
 
 .pv_cart_mycart_box .list .cols3 .price_now em {
     margin-left: 10px;
-    padding: 0 4px;
+    padding: 0 4px 0 12px;
     color: #fff;
-    padding-left: 12px;
-    background: #31bf00 url(../../images/cart/bg.cart.save.arrow.png) no-repeat 2px 2px;
+    background: url(../../images/cart/bg.cart.save.arrow.png) 2px 2px no-repeat #31bf00
 }
 
 .pv_cart_mycart_box .list .cols3 .get_o {
@@ -658,13 +630,13 @@ em {
     color: #239adc;
     text-align: center;
     text-decoration: underline;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .pv_cart_mycart_box .list .cols3 .get_o img {
     padding: 17px 0 0 16px;
     background: url(../../images/cart/bg.cart.bird.o.gif);
-    margin-right: 3px;
+    margin-right: 3px
 }
 
 .pv_cart_mycart_box .list .cols3 .get_o.disable {
@@ -676,9 +648,6 @@ em {
 .pv_cart_mycart_box .list .cols3 .get_o.disable img {
     background-position: 0 -27px
 }
-
-
-/*绗洓鍒�:鏁伴噺*/
 
 .pv_cart_mycart_box .list .cols4 .amount {
     width: 70px;
@@ -699,8 +668,7 @@ em {
     float: left;
     display: none;
     height: 37px;
-    background: url(../img/bg.cart.main.png) no-repeat -587px -389px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
+    background: url(../img/bg.cart.main.png) -587px -389px no-repeat;
     text-indent: 35px;
     line-height: 30px
 }
@@ -735,8 +703,7 @@ em {
     float: left;
     width: 21px;
     height: 25px;
-    background: url(../img/bg.cart.main.png) no-repeat;
-    _background-image: url(../../images/cart/bg.cart.main.6.png)
+    background: url(../img/bg.cart.main.png) no-repeat
 }
 
 .pv_cart_mycart_box .list .cols4 .amount .cut {
@@ -756,36 +723,21 @@ em {
 }
 
 .pv_cart_mycart_box .list .cols4 .amount .buy_num {
-    float: left;
     width: 28px;
     height: 25px;
     line-height: 25px;
     text-align: center;
-    background: url(../img/bg.cart.main.png) no-repeat -84px -326px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
+    background: url(../img/bg.cart.main.png) -84px -326px no-repeat;
     float: left;
-    border: 0;
-    *width: 26px;
+    border: 0
 }
 
-.pv_cart_mycart_box .add_buy .cols4 .amount .buy_num {
-    background: none;
-}
-
-.pv_cart_mycart_box .z_h_blue .cols4 .amount .buy_num {
-    background: none;
-}
-
-.pv_cart_mycart_box .add_buy .cols4 .amount .cut_plus {
-    background: none;
-}
-
+.pv_cart_mycart_box .add_buy .cols4 .amount .buy_num,
+.pv_cart_mycart_box .add_buy .cols4 .amount .cut_plus,
+.pv_cart_mycart_box .z_h_blue .cols4 .amount .buy_num,
 .pv_cart_mycart_box .z_h_blue .cols4 .amount .cut_plus {
-    background: none;
+    background: 0 0
 }
-
-
-/*绗簲鍒�:灏忚*/
 
 .pv_cart_mycart_box .list .cols5 {
     text-align: center
@@ -800,15 +752,8 @@ em {
     color: #7D8289
 }
 
-.pv_cart_mycart_box .list .cols5 span b {
-    font-weight: normal
-}
-
-
-/*绗叚鍒�:鎿嶄綔*/
-
 .pv_cart_mycart_box .list .cols6 {
-    min-height: 40px;
+    min-height: 40px
 }
 
 .pv_cart_mycart_box .list .cols6 p {
@@ -819,8 +764,7 @@ em {
 .pv_cart_mycart_box .list .cols6 .do {
     position: relative;
     margin-left: 24px;
-    *width: 95px;
-    margin-right: 0;
+    margin-right: 0
 }
 
 .pv_cart_mycart_box .list .cols6 .do .success {
@@ -834,7 +778,7 @@ em {
 
 .pv_cart_mycart_box .list .cols6 .do .success p {
     line-height: 16px;
-    float: left;
+    float: left
 }
 
 .pv_cart_mycart_box .list .cols6 .do .success p.mt10 {
@@ -847,7 +791,7 @@ em {
     text-decoration: underline;
     text-indent: 0;
     margin: 19px 12px 0 0;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .pv_cart_mycart_box .list .cols6 .do .collected {
@@ -881,16 +825,15 @@ em {
     text-indent: 0;
     line-height: 14px;
     margin: 0 0 0 10px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .pv_cart_mycart_box .list .cols6 .do .buy {
     display: block;
     width: 81px;
     height: 33px;
-    background: url(../img/bg.cart.main.png) no-repeat 0 -355px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
-    margin: 5px 0 0 11px;
+    background: url(../img/bg.cart.main.png) 0 -355px no-repeat;
+    margin: 5px 0 0 11px
 }
 
 .pv_cart_mycart_box .list .cols6 .do .not_buy {
@@ -904,11 +847,9 @@ em {
 .pv_cart_mycart_box .list .cols6 .do .collect_del span {
     float: left;
     padding-left: 18px;
-    *padding-left: 15px;
     cursor: pointer;
     color: #7D8289;
-    background: url(../../images/cart/bg.cart.icons.png) no-repeat;
-    _background-image: url(../../images/cart/bg.cart.icons.6.png);
+    background: url(../../images/cart/bg.cart.icons.png) no-repeat
 }
 
 .pv_cart_mycart_box .list .cols6 .do .collect_del span:hover {
@@ -925,9 +866,6 @@ em {
     background-position: 0 -23px
 }
 
-
-/*绗竷鍒�:杩愯垂*/
-
 .pv_cart_mycart_box .freight {
     display: block;
     float: left;
@@ -936,76 +874,41 @@ em {
     width: 114px;
     height: 100%;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .pv_cart_mycart_box .freight span {
     vertical-align: middle;
-    display: block;
+    display: block
 }
 
 .pv_cart_mycart_box .freight span.money {
-    margin: 5px 0 0 0;
+    margin: 5px 0 0;
     display: inline-block;
     background: url(../../images/cart/bg.cart.freight.gif) no-repeat;
     height: 17px;
     line-height: 17px;
     padding-left: 22px;
-    padding-right: 5px;
+    padding-right: 5px
 }
 
 .pv_cart_mycart_box .freight span.money_1 {
     background-position: 0 0;
     background-color: #bde2ae;
-    color: #266a07;
+    color: #266a07
 }
 
 .pv_cart_mycart_box .freight span.money_2 {
     background-position: 0 -24px;
     background-color: #e2cfb1;
-    color: #943114;
+    color: #943114
 }
 
 .pv_cart_mycart_box .freight span.money_3 {
     background-position: 0 -48px;
     background-color: #b0d1e0;
-    color: #155b96;
+    color: #155b96
 }
-
-
-/*璧犲搧鍙婂姞璧� 1104鍘绘帀 start*/
-
-
-/*.pv_cart_mycart_box .list .add_gift {
-    background:#FFF9D4; margin-top:1px; height:30px; overflow:hidden
-}
-.pv_cart_mycart_box .list .add_gift span {
-    display:block; margin-left:45px; line-height:30px; color:#7D8289; margin-right:10px; width:1025px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; text-align:left
-}
-.pv_cart_mycart_box .list .add-more-gift {
-    background:#FFF9D4; height:59px; line-height:59px; margin-top:1px; 
-}
-.pv_cart_mycart_box .list .add-more-gift b{
-float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px; height:13px; margin: 24px 18px 0 46px; padding:0 4px
-}
-.pv_cart_mycart_box .list .add-more-gift .small {
-    position:relative; width:40px; height:40px; margin:9px; float:left;
-}
-.pv_cart_mycart_box .list .add-more-gift .small img {
-    width:40px; height:40px; float:left;
-}
-.pv_cart_mycart_box .list .add-more-gift .small .border {
-    position:absolute; width:40px; height:40px; z-index:1; top:0; left:0; background:url(../../images/cart/bg.cart.main.png) no-repeat -118px -311px; _background-image: url(../images/cart/shoppingcart_for6.png)
-}
-.pv_cart_mycart_box .list .add-more-gift .more-name {
-    line-height:59px; color:#7d8289
-}*/
-
-
-/*璧犲搧鍙婂姞璧� 1104鍘绘帀 end*/
-
-
-/*鍚嶅搧棣嗘爣棰�*/
 
 .pv_cart_mycart_box .block_title_left span {
     float: left;
@@ -1015,15 +918,15 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 
 .pv_cart_mycart_box .block_title_left .brand_product {
     margin-left: 13px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     margin-right: 8px;
-    color: #505865;
+    color: #505865
 }
 
 .pv_cart_mycart_box .block_title_left .brand_product i {
     font-style: normal;
-    color: #c48c37;
+    color: #c48c37
 }
 
 .pv_cart_mycart_box .block_title_left span.tip {
@@ -1051,20 +954,16 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     margin: 0 12px
 }
 
-
-/*鏀惰棌澶�*/
-
 .pv_cart_my_collect {
     margin-top: 40px;
     color: #505966;
-    font-size: 12px;
-    font-family: Verdana, Geneva, sans-serif
+    font-size: 12px
 }
 
 .pv_cart_my_collect h2 {
     font-size: 14px;
     margin-left: 3px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: left
 }
 
@@ -1090,25 +989,24 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 .pv_cart_my_collect .collect_list .cols2 {
     width: 143px;
     float: left;
-    min-height: 1px;
+    min-height: 1px
 }
 
 .pv_cart_my_collect .collect_list .cols3 {
     width: 174px;
     float: left;
-    min-height: 1px;
+    min-height: 1px
 }
 
 .pv_cart_my_collect .collect_list .cols4 {
     width: 166px;
     float: left;
-    min-height: 1px;
+    min-height: 1px
 }
 
 .pv_cart_my_collect .collect_list .cols5 {
     width: 210px;
-    float: left;
-    _width: 200px;
+    float: left
 }
 
 .pv_cart_my_collect .collect_list .list {
@@ -1129,7 +1027,6 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     width: 54px;
     height: 17px;
     background: url(../img/bg.cart.main.png) no-repeat;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
     margin: 12px 5px 0 16px
 }
 
@@ -1152,7 +1049,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     padding-left: 15px;
     height: 12px;
     line-height: 12px;
-    margin: 14px auto;
+    margin: 14px auto
 }
 
 .pv_cart_my_collect .collect_list .list .cols3,
@@ -1172,30 +1069,23 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 }
 
 .pv_cart_my_collect .collect_list .list .cols4 span.linbao {
-    background: #703030;
+    background: #703030
 }
 
 .pv_cart_my_collect .collect_list .list .cols5 span {
     color: #505966;
     padding-left: 18px;
     cursor: pointer;
-    background: url(../../images/cart/bg.cart.icons.png) no-repeat 0 -23px;
-    _background-image: url(../../images/cart/bg.cart.icons.6.png);
-    *background-position: 0 -25px
+    background: url(../../images/cart/bg.cart.icons.png) 0 -23px no-repeat
 }
-
-
-/*鎺ㄨ崘鍟嗗搧*/
 
 .pv_cart_recommend {
     height: 318px;
     width: 1188px;
     border: 1px solid #c6c9cc;
     margin: 30px 0;
-    font-family: Verdana, Geneva, sans-serif;
     font-size: 12px;
-    color: #505966;
-    _overflow: hidden
+    color: #505966
 }
 
 .pv_cart_recommend .tabs {
@@ -1215,12 +1105,11 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     height: 16px;
     display: block;
     padding: 0 20px;
-    border-right: 1px solid #EBEEF0;
-    _float: left
+    border-right: 1px solid #EBEEF0
 }
 
 .pv_cart_recommend .tabs ul li span.on {
-    font-weight: bold
+    font-weight: 700
 }
 
 .pv_cart_recommend .pv_cart_recommend_content_box {
@@ -1232,7 +1121,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 
 .pv_cart_recommend .pv_cart_recommend_content_box .product_list {
     width: 1080px;
-    margin-left: 55px;
+    margin-left: 55px
 }
 
 .pv_cart_recommend .pv_cart_recommend_content_box .list {
@@ -1248,12 +1137,8 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 }
 
 .pv_cart_recommend .pv_cart_recommend_content_box .list p {
-    margin: 0;
-    padding: 0
-}
-
-.pv_cart_recommend .pv_cart_recommend_content_box .list p {
-    margin-top: 5px;
+    margin: 5px 0 0;
+    padding: 0;
     line-height: 16px
 }
 
@@ -1270,6 +1155,18 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     margin-top: 2px
 }
 
+.pv_cart_recommend .pv_cart_recommend_content .next_fake,
+.pv_cart_recommend .pv_cart_recommend_content .prev_fake {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    width: 12px;
+    height: 21px;
+    opacity: 1;
+    filter: alpha(opacity: 100);
+    cursor: pointer
+}
+
 .pv_cart_recommend .pv_cart_recommend_content_box .list p.icon {
     line-height: 12px
 }
@@ -1283,9 +1180,9 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     width: 12px;
     height: 21px;
     cursor: pointer;
-    background: url(../img/bg.cart.main.png) no-repeat -21px -282px;
+    background: url(../img/bg.cart.main.png) -21px -282px no-repeat;
     opacity: 1;
-    filter: alpha(opacity: 100);
+    filter: alpha(opacity: 100)
 }
 
 .pv_cart_recommend .pv_cart_recommend_content .prev_on span {
@@ -1294,16 +1191,16 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 
 .pv_cart_recommend .pv_cart_recommend_content .next {
     opacity: 1;
-    right: 30px;
+    right: 30px
 }
 
 .pv_cart_recommend .pv_cart_recommend_content .next span {
     width: 12px;
     height: 21px;
     cursor: pointer;
-    background: url(../img/bg.cart.main.png) no-repeat -65px -282px;
+    background: url(../img/bg.cart.main.png) -65px -282px no-repeat;
     opacity: 1;
-    filter: alpha(opacity: 100);
+    filter: alpha(opacity: 100)
 }
 
 .pv_cart_recommend .pv_cart_recommend_content .next_on span {
@@ -1311,46 +1208,25 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 }
 
 .pv_cart_recommend .pv_cart_recommend_content .prev_fake {
-    position: absolute;
     left: 33px;
-    top: 50%;
-    margin-top: -16px;
-    width: 12px;
-    height: 21px;
-    cursor: pointer;
-    background: url(../img/bg.cart.main.png) no-repeat -21px -282px;
-    opacity: 1;
-    filter: alpha(opacity: 100);
+    background: url(../img/bg.cart.main.png) -21px -282px no-repeat
 }
 
 .pv_cart_recommend .pv_cart_recommend_content .next_fake {
-    position: absolute;
     right: 30px;
-    top: 50%;
-    margin-top: -16px;
-    width: 12px;
-    height: 21px;
-    cursor: pointer;
-    background: url(../img/bg.cart.main.png) no-repeat -65px -282px;
-    opacity: 1;
-    filter: alpha(opacity: 100);
+    background: url(../img/bg.cart.main.png) -65px -282px no-repeat
 }
 
 .pv_cart_recommend .pv_cart_recommend_content SPAN.count {
     color: #7A706C;
     position: relative;
     float: right;
-    top: -30px;
-    *top: -2px;
-    _top: -40px
+    top: -30px
 }
 
 .pv_cart_recommend .pv_cart_recommend_content .count em {
     color: #FF5F1F
 }
-
-
-/*棰嗗彇楦ュ埜寮圭獥*/
 
 .pv_cart_get_oticket {
     width: 422px;
@@ -1376,7 +1252,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     line-height: 38px;
     height: 38px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: #5c5f66;
     margin-left: 25px;
     float: left
@@ -1391,16 +1267,11 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     padding: 0
 }
 
-.pv_cart_get_oticket_box .o-ticket {
-    *width: 330px;
-    *overflow: hidden
-}
-
 .pv_cart_get_oticket_box .o-ticket .list {
     width: 330px;
     height: 67px;
     color: #229cdb;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     background: url(../../images/cart/bg.cart.oticket.gif) no-repeat;
     margin: 0 auto;
@@ -1412,15 +1283,14 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     width: 328px;
     background: #fff8af;
     border: 1px solid #ffc77f;
-    margin: 2px auto;
-    *margin: 2px 0
+    margin: 2px auto
 }
 
 .pv_cart_get_oticket_box .rules h3 {
     font-size: 12px;
     color: #b74a00;
     margin: 10px 0 5px 24px;
-    font-weight: bold
+    font-weight: 700
 }
 
 .pv_cart_get_oticket_box .rules p {
@@ -1433,8 +1303,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 .pv_cart_get_oticket_box .get_btn {
     display: block;
     border: 0;
-    background: url(../img/bg.cart.main.png) no-repeat -375px -355px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
+    background: url(../img/bg.cart.main.png) -375px -355px no-repeat;
     width: 102px;
     padding: 7px 0 9px;
     padding-top: 9px\9\0;
@@ -1442,20 +1311,17 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     color: #505966;
     font-size: 12px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer
 }
 
 .pv_cart_get_oticket_box .get_btn:hover {
-    background-position: -271px -355px;
+    background-position: -271px -355px
 }
 
 .pv_cart_get_oticket_box .he_10 {
     height: 10px
 }
-
-
-/*搴曟爮*/
 
 .pv_cart_balance {
     margin: 10px auto 0;
@@ -1465,7 +1331,6 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     border: 1px solid #d7dfe5;
     border-bottom-color: #9caebb;
     font-size: 12px;
-    font-family: Verdana, Geneva, sans-serif;
     color: #505966
 }
 
@@ -1474,12 +1339,12 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     z-index: 1001;
     bottom: 0;
     left: 50%;
-    margin-left: -595px;
+    margin-left: -595px
 }
 
 .pv_cart_balance .yiban {
     line-height: 68px;
-    height: 68px;
+    height: 68px
 }
 
 .pv_cart_balance label {
@@ -1512,9 +1377,9 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     height: 43px;
     width: 151px;
     float: right;
-    background: url(../img/bg.cart.main.png) no-repeat -212px -179px;
+    background: url(../img/bg.cart.main.png) -212px -179px no-repeat;
     cursor: pointer;
-    margin: 14px 13px 0 0;
+    margin: 14px 13px 0 0
 }
 
 .pv_cart_balance .calculate .lack_tip {
@@ -1532,7 +1397,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 .pv_cart_balance .calculate .lack_tip .close {
     width: 14px;
     height: 12px;
-    background: url(../img/bg.cart.main.png) no-repeat -252px -512px;
+    background: url(../img/bg.cart.main.png) -252px -512px no-repeat;
     float: right;
     margin: 15px 4px 0 0;
     cursor: pointer
@@ -1541,74 +1406,67 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 .pv_cart_balance .total_price {
     float: right;
     height: 68px;
-    /*width: 310px;*/
     color: #505966
 }
 
 .pv_cart_balance .total_price p {
-    margin: 0;
     padding: 0;
-    margin: 11px 0 0 0;
-    font-family: Arial, Microsoft YaHei;
+    margin: 11px 0 0;
+    font-family: Arial, Microsoft YaHei
 }
 
 .pv_cart_balance .total_price span.mr25 {
-    margin-right: 25px;
+    margin-right: 25px
 }
 
 .pv_cart_balance .total_price span b {
     color: #239cdc;
-    padding-right: 5px;
+    padding-right: 5px
 }
 
 .pv_cart_balance .total_price p.price {
     height: 36px;
     line-height: 36px;
-    margin: 4px 0 0 0;
+    margin: 4px 0 0
 }
 
 .pv_cart_balance .total_price p.price span {
     color: #f10000;
     float: left;
-    text-align: center;
+    text-align: center
 }
 
 .pv_cart_balance .total_price p.price span.jia {
     color: #505966;
-    float: left;
+    float: left
 }
 
 .pv_cart_balance .total_price p.price span.yunfei {
-    font-size: 13px;
-    width: 100px;
+    font-size: 13px
 }
 
 .pv_cart_balance .total_price p.price span.yunfei em {
-    font-size: 14px;
+    font-size: 14px
 }
 
 .pv_cart_balance .total_price p.price span.shangpin {
     font-size: 26px;
-    width: 170px;
+    width: 170px
 }
 
 .pv_cart_balance .total_price p.price span.shangpin em {
-    font-size: 20px;
+    font-size: 20px
 }
 
-
-/*缁х画璐墿鍑戝崟璐�*/
-
 .pv_cart_settle {
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 .pv_cart_settle a.go_on_buy {
     width: 101px;
     height: 33px;
     float: left;
-    background: url(../img/bg.cart.main.png) no-repeat -168px -354px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
+    background: url(../img/bg.cart.main.png) -168px -354px no-repeat;
     cursor: pointer
 }
 
@@ -1617,38 +1475,37 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     line-height: 28px;
     border: 1px solid #d7d7d7;
     float: left;
-    margin: 1px 0 0 15px;
+    margin: 1px 0 0 15px
 }
 
 .pv_cart_settle .pieces H2 {
     font-size: 12px;
     float: left;
     color: #505966;
-    font-weight: bold;
-    margin-left: 10px;
+    font-weight: 700;
+    margin-left: 10px
 }
 
 .pv_cart_settle .pieces UL {
     font-size: 12px;
     float: left;
-    margin: 0 3px 0 5px;
+    margin: 0 3px 0 5px
 }
 
 .pv_cart_settle .pieces UL LI {
     float: left;
-    margin-left: 3px;
+    margin-left: 3px
 }
 
 .pv_cart_settle .pieces UL LI A {
     color: #fff;
     background: #7e868d;
-    padding: 6px 8px;
-    padding-right: 22px;
-    font-weight: bold;
+    padding: 6px 22px 6px 8px;
+    font-weight: 700;
     position: relative;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 2px
 }
 
 .pv_cart_settle .pieces UL LI A:hover {
@@ -1657,18 +1514,14 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 }
 
 .pv_cart_settle .pieces UL LI A SPAN {
-    background: url(../img/bg.cart.main.png) no-repeat -196px -516px;
-    _background-image: url(../../images/cart/bg.cart.main.6.png);
+    background: url(../img/bg.cart.main.png) -196px -516px no-repeat;
     width: 8px;
     height: 4px;
     display: block;
     position: absolute;
     right: 5px;
-    top: 10px;
+    top: 10px
 }
-
-
-/*璐墿杞︿负绌�*/
 
 .pv_cart_empty {
     height: 113px;
@@ -1684,28 +1537,23 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     height: 56px;
     float: left;
     margin: 32px 0 0 390px;
-    background: url(../img/bg.cart.main.png) no-repeat -141px -246px;
-    _background-image: url(../images/cart/shoppingcart_for6.png);
+    background: url(../img/bg.cart.main.png) -141px -246px no-repeat
 }
 
 .pv_cart_empty p {
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 0;
     font-size: 12px;
     color: #666b7e;
     line-height: 113px;
     height: 113px;
-    float: left;
-    margin-left: 20px;
+    float: left
 }
 
 .pv_cart_empty p a {
     color: #239cdc;
     text-decoration: underline
 }
-
-
-/*鏀惰棌澶圭炕椤�*/
 
 .pagination-page {
     height: 20px;
@@ -1716,7 +1564,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 }
 
 .pagination-page div {
-    float: left;
+    float: left
 }
 
 .pagination-page .page-siblings {
@@ -1739,7 +1587,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 .pagination-page .page-wrap.on {
     border-color: #acacac;
     color: #23a0ce;
-    font-weight: bold
+    font-weight: 700
 }
 
 .pagination-page .page-split {
@@ -1748,23 +1596,19 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     color: #b1b1b1
 }
 
-
-/*鍔犱环璐晢鍝佸垪琛�*/
-
 .pv_cart_mycart_add_buys {
     border-bottom: 2px solid #686868;
     border-left: 1px solid #C6C9CC;
     border-right: 1px solid #C6C9CC;
-    background-color: #e1f4ff;
+    background-color: #e1f4ff
 }
 
 .pv_cart_mycart_add_buys ul {
-    padding: 13px 0;
-    padding-top: 5px;
+    padding: 5px 0 13px
 }
 
 .pv_cart_mycart_add_buys li {
-    padding: 5px 0;
+    padding: 5px 0
 }
 
 .pv_cart_mycart_add_buys li span.dot {
@@ -1776,16 +1620,12 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     line-height: 18px;
     color: #fff;
     font-size: 12px;
-    background: url(../../images/cart/bg.cart.icon.addsale.png) no-repeat;
-}
-
-.pv_cart_mycart_add_buys li span.dot span {
-    /* display:block; height: 13px; width: 49px; background: #FF696A; color: #fff; line-height: 13px; text-align: center; *line-height:14px; */
+    background: url(../../images/cart/bg.cart.icon.addsale.png) no-repeat
 }
 
 .pv_cart_mycart_add_buys li a {
     float: left;
-    margin-top: 4px;
+    margin-top: 4px
 }
 
 .pv_cart_mycart_add_buys li .change {
@@ -1798,15 +1638,20 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     font-size: 12px;
     color: #fff;
     background: url(../../images/cart/bg.cart.btn.change.jpg) no-repeat;
-    text-align: center;
+    text-align: center
+}
+
+.pv_cart_add_buy_box .selected_box h3,
+.pv_cart_add_buy_box h3.til2 {
+    font-size: 14px;
+    color: #505966;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-weight: 400
 }
 
 .pv_cart_mycart_add_buys li .change:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
-
-
-/*鍔犱环璐脊灞�*/
 
 .pv_cart_add_buy {
     width: 573px;
@@ -1824,49 +1669,34 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     CURSOR: pointer
 }
 
-.pv_cart_add_buy_box {
-    /*width:560px; height:465px; overflow:auto; overflow-x:hidden;*/
-}
-
 .pv_cart_add_buy_box .selected_box {
     width: 540px;
     margin-left: 16px;
-    margin-top: 15px;
+    margin-top: 15px
 }
 
 .pv_cart_add_buy_box .selected_box h3 {
-    font-size: 14px;
-    color: #505966;
-    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
-    margin-bottom: 5px;
-    font-weight: normal;
+    margin-bottom: 5px
 }
 
 .pv_cart_add_buy_box .selected_box ul {
     padding: 4px;
-    border: 1px dashed #bfbfbf;
+    border: 1px dashed #bfbfbf
 }
 
 .pv_cart_add_buy_box .selected_box ul li {
-    _display: inline;
     float: left;
-    margin: 0 2px;
+    margin: 0 2px
 }
 
 .pv_cart_add_buy_box h3.til2 {
-    font-size: 14px;
-    color: #505966;
-    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
     margin-top: 15px;
-    margin-left: 18px;
-    font-weight: normal;
+    margin-left: 18px
 }
 
 .pv_cart_add_buy_box h3.til2 span {
-    color: #f00;
+    color: red
 }
-
-.pv_cart_add_buy_box .prd_box {}
 
 .pv_cart_add_buy_box .prd_box .prd_box_inr {
     width: 540px;
@@ -1874,42 +1704,38 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     overflow: auto;
     overflow-x: hidden;
     margin-left: 18px;
-    margin-top: 2px;
-    *position: relative;
-    *zoom: 1;
+    margin-top: 2px
 }
 
 .pv_cart_add_buy_box .prd_box table {
     border-collapse: collapse;
-    width: 500px;
+    width: 500px
 }
 
 .pv_cart_add_buy_box .prd_box table p {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 .pv_cart_add_buy_box .prd_box table tr {
-    border-bottom: 1px dotted #d1d1d1;
+    border-bottom: 1px dotted #d1d1d1
 }
 
 .pv_cart_add_buy_box .prd_box table td {
     padding: 7px 0;
-    *border-bottom: 1px dotted #d1d1d1;
-    *position: relative;
-    zoom: 1;
+    zoom: 1
 }
 
 .pv_cart_add_buy_box .prd_box .col1 {
     width: 80px;
-    text-align: left;
+    text-align: left
 }
 
 .pv_cart_add_buy_box .prd_box .col1 .img {
     position: relative;
     width: 78px;
     height: 78px;
-    border: 1px solid #d7d7d7;
+    border: 1px solid #d7d7d7
 }
 
 .pv_cart_add_buy_box .prd_box .col1 .img .shadow {
@@ -1921,53 +1747,51 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     line-height: 78px;
     text-align: center;
     color: #fff;
-    font-weight: bold;
-    background: url(../../images/cart/img.cart.shadow.png) no-repeat;
+    font-weight: 700;
+    background: url(../../images/cart/img.cart.shadow.png) no-repeat
 }
 
 .pv_cart_add_buy_box .prd_box .col2 .txt {
     color: #5c5f66;
-    line-height: 1.4;
+    line-height: 1.4
 }
 
 .pv_cart_add_buy_box .prd_box .col2 {
     width: 190px;
-    padding: 0 20px;
-    padding-right: 0;
+    padding: 0 0 0 20px
 }
 
 .pv_cart_add_buy_box .prd_box .col2 .sty {
-    color: #888888;
-    line-height: 1.4;
+    color: #888;
+    line-height: 1.4
 }
 
 .pv_cart_add_buy_box .prd_box .col3 {
-    padding: 0 15px;
+    padding: 0 15px
 }
 
 .pv_cart_add_buy_box .prd_box .col3 .data {
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .pv_cart_add_buy_box .prd_box .col3 .price {
     color: #f10000;
-    font-size: 12px;
+    font-size: 12px
 }
 
 .pv_cart_add_buy_box .prd_box .col3 del {
     color: #c3c2c2;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
 .pv_cart_add_buy_box .prd_box .col3 .save {
-    padding: 0 4px;
+    padding: 0 4px 0 12px;
     color: #fff;
-    padding-left: 12px;
-    background: #31bf00 url(../../images/cart/bg.cart.save.arrow.png) no-repeat 2px 2px;
+    background: url(../../images/cart/bg.cart.save.arrow.png) 2px 2px no-repeat #31bf00
 }
 
 .pv_cart_add_buy_box .prd_box .col4 {
-    width: 70px;
+    width: 70px
 }
 
 .pv_cart_add_buy_box .prd_box .col4 .btn {
@@ -1977,28 +1801,28 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     line-height: 26px;
     text-align: center;
     color: #505966;
-    background: url(../../images/cart/img.cart.btn.jpg) no-repeat;
+    background: url(../../images/cart/img.cart.btn.jpg) no-repeat
 }
 
 .pv_cart_add_buy_box h2 {
     line-height: 32px;
     height: 32px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: #5c5f66;
     padding-left: 16px;
-    background-color: #e1f4ff;
+    background-color: #e1f4ff
 }
 
 .pv_cart_add_buy_box h2 span {
-    color: #ff0000;
+    color: red
 }
 
 .pv_cart_add_buy_box p.step {
     width: 639px;
     height: 40px;
     background: url(../../images/cart/bg.add.step.png);
-    margin-left: 24px;
+    margin-left: 24px
 }
 
 .pv_cart_add_buy_box p.one {
@@ -2012,7 +1836,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 .pv_cart_add_buy_box .add_lists {
     margin-left: 16px;
     height: 378px;
-    overflow: auto;
+    overflow: auto
 }
 
 .pv_cart_add_buy_box .add_lists li {
@@ -2020,29 +1844,25 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     padding: 7px 0;
     float: left;
     width: 212px;
-    margin-left: 7px;
+    margin-left: 7px
 }
 
 .pv_cart_add_buy_box .add_lists li input {
     margin-right: 7px;
-    *margin-right: 4px;
-    margin-top: 8px;
+    margin-top: 8px
 }
-
-.pv_cart_add_buy_box .add_lists li a {}
 
 .pv_cart_add_buy_box .add_lists li a img {
     width: 38px;
     height: 38px;
     border: 1px solid #e6e9ee;
-    margin-top: 5px;
+    margin-top: 5px
 }
 
 .pv_cart_add_buy_box .add_lists li .product {
     float: right;
     padding-left: 9px;
-    *padding-left: 6px;
-    width: 135px;
+    width: 135px
 }
 
 .pv_cart_add_buy_box .add_lists li .product a {
@@ -2051,41 +1871,40 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     height: 16px;
     line-height: 16px;
     width: 130px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .pv_cart_add_buy_box .add_lists li .product p {
     margin: 0;
-    padding: 3px 0;
+    padding: 3px 0
 }
 
 .pv_cart_add_buy_box .add_lists li .product p span {
-    color: #f10000;
+    color: #f10000
 }
 
 .pv_cart_add_buy_box .add_lists li .product p del {
     color: #c3c2c2;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
 .pv_cart_add_buy_box .add_lists li .product .save {
-    padding: 0 4px;
+    padding: 0 4px 0 12px;
     color: #fff;
-    padding-left: 12px;
-    background: #31bf00 url(../../images/cart/bg.cart.save.arrow.png) no-repeat 2px 2px;
+    background: url(../../images/cart/bg.cart.save.arrow.png) 2px 2px no-repeat #31bf00
 }
 
 .pv_cart_add_buy_box .choose_type {
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .pv_cart_add_buy_box .choose_type .he10 {
-    height: 10px;
+    height: 10px
 }
 
 .pv_cart_add_buy_box .choose_type .ct_l {
     float: left;
-    width: 305px;
+    width: 305px
 }
 
 .pv_cart_add_buy_box .choose_type .ct_l .choose {
@@ -2093,7 +1912,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     color: #666b7e;
     margin: 0 10px 0 46px;
     line-height: 25px;
-    width: 60px;
+    width: 60px
 }
 
 .pv_cart_add_buy_box .choose_type .ct_l .sel {
@@ -2108,24 +1927,24 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     background: url(../../images/cart/bg.cart.input-bg.gif) repeat-x;
     float: left;
     position: relative;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .pv_cart_add_buy_box .choose_type .ct_l .sel1 {
-    z-index: 2;
+    z-index: 2
 }
 
 .pv_cart_add_buy_box .choose_type .ct_l .sel .arrow {
     float: right;
     display: block;
-    background: url(../img/bg.cart.main.png) no-repeat -121px -460px;
+    background: url(../img/bg.cart.main.png) -121px -460px no-repeat;
     width: 8px;
     height: 23px;
     margin-right: 8px
 }
 
 .pv_cart_add_buy_box .choose_type .ct_l .sel .down {
-    background-position: -121px -486px;
+    background-position: -121px -486px
 }
 
 .pv_cart_add_buy_box .choose_type .ct_l .sel ul {
@@ -2149,20 +1968,20 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 .pv_cart_add_buy_box .choose_type .ct_r {
     line-height: 25px;
     color: #666b7e;
-    float: left;
+    float: left
 }
 
 .pv_cart_add_buy_box .choose_type .ct_r b {
-    color: #4E4B4B;
+    color: #4E4B4B
 }
 
 .pv_cart_add_buy_box .choose_type .ct_r a {
-    color: #3366CC;
+    color: #36C
 }
 
 .pv_cart_add_buy_box .buttons {
     margin-top: 60px;
-    text-align: center;
+    text-align: center
 }
 
 .pv_cart_add_buy_box .buttons span {
@@ -2172,18 +1991,18 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     text-align: center;
     line-height: 35px;
     margin: 0 7px;
-    font-weight: bold;
-    cursor: pointer;
+    font-weight: 700;
+    cursor: pointer
 }
 
 .pv_cart_add_buy_box .buttons span.pre {
     color: #505966;
-    background: url(../../images/shop/bg.button.9.gif) no-repeat;
+    background: url(../../images/shop/bg.button.9.gif) no-repeat
 }
 
 .pv_cart_add_buy_box .buttons span.next {
     color: #fff;
-    background: url(../../images/shop/bg.button.8.gif) no-repeat;
+    background: url(../../images/shop/bg.button.8.gif) no-repeat
 }
 
 .pv_cart_add_buy .tip {
@@ -2196,40 +2015,36 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     width: 224px;
     padding-left: 39px;
     height: 42px;
-    background: #fff url(../../images/cart/bg.cart.icons.png) no-repeat 15px -521px;
+    background: url(../../images/cart/bg.cart.icons.png) 15px -521px no-repeat #fff;
     border: 4px solid #999;
     line-height: 41px;
-    color: #7D8289;
+    color: #7D8289
 }
 
 .pv_cart_mycart_add_buys .tips {
-    margin: 0;
+    margin: 0 0 0 44px;
     padding-top: 13px;
-    margin-left: 44px;
-    font-size: 13px;
+    font-size: 13px
 }
 
-
-/*涓や欢婊″噺*/
-
 .pv_cart_mycart_box .m_j .cols1 .pic {
-    border: 1px solid #FDC8DB;
+    border: 1px solid #FDC8DB
 }
 
 .pv_cart_mycart_box .m_j_blue .cols1 .pic {
-    border: 1px solid #99d8f9;
+    border: 1px solid #99d8f9
 }
 
 .pv_cart_mycart_box .m_j_info {
     height: 39px;
-    background: url(../../images/cart/m-j.bg.png) no-repeat 57px 0;
+    background: url(../../images/cart/m-j.bg.png) 57px 0 no-repeat;
     width: 1072px;
     margin-bottom: 11px;
-    position: relative;
+    position: relative
 }
 
 .pv_cart_mycart_box .m_j_info_blue {
-    background-image: url(../../images/cart/m-j.bg.2.png);
+    background-image: url(../../images/cart/m-j.bg.2.png)
 }
 
 .pv_cart_mycart_box .m_j_info em {
@@ -2239,20 +2054,19 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     background: #fdc8db;
     position: absolute;
     left: 77px;
-    top: -20px;
+    top: -20px
 }
 
 .pv_cart_mycart_box .m_j_info_blue em {
-    background: #99d8f9;
+    background: #99d8f9
 }
 
 .pv_cart_mycart_box .m_j_info div p {
     color: #515964;
     line-height: 39px;
     padding: 0;
-    margin: 0;
-    margin-left: 114px;
-    float: left;
+    margin: 0 0 0 114px;
+    float: left
 }
 
 .pv_cart_mycart_box .m_j_info_blue div p {
@@ -2261,18 +2075,18 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 
 .pv_cart_mycart_box .m_j_info_blue div h6 {
     float: right;
-    font-weight: normal;
+    font-weight: 400;
     height: 39px;
     line-height: 39px;
     color: #969494;
     width: 118px;
     text-align: center;
-    margin-right: 14px;
+    margin-right: 14px
 }
 
 .pv_cart_mycart_box .m_j_info_blue div h5 {
     float: right;
-    font-weight: normal;
+    font-weight: 400;
     height: 39px;
     line-height: 39px;
     color: #515B65;
@@ -2281,10 +2095,10 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 }
 
 .pv_cart_mycart_box .m_j_info_blue div h5 b {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     color: #E90506;
-    margin-left: 7px;
+    margin-left: 7px
 }
 
 .pv_cart_mycart_box .m_j_info div span {
@@ -2297,12 +2111,12 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     margin: 5px 0 0 8px;
     padding-left: 4px;
     color: #d80100;
-    background: url(../../images/cart/m-j.icon.png) no-repeat;
+    background: url(../../images/cart/m-j.icon.png) no-repeat
 }
 
 .pv_cart_mycart_box .m_j_info div a {
     float: left;
-    color: #3366cc;
+    color: #36c;
     line-height: 39px;
     margin-left: 14px;
     text-decoration: underline
@@ -2310,7 +2124,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
 
 .pv_cart_mycart_box .block_list .left_block_list .not_1 {
     border-top: 0;
-    position: relative;
+    position: relative
 }
 
 .pv_cart_mycart_box .block_list .left_block_list .not_1 span.m_j_l {
@@ -2319,7 +2133,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     height: 40px;
     background: #99d8f9;
     top: -20px;
-    left: 77px;
+    left: 77px
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift {
@@ -2341,15 +2155,14 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     z-index: 2;
     width: 94px;
     height: 23px;
-    border: 1px solid #f6f6f6;
     border: 1px solid #a7a6ac;
-    background: url(data:image/gif;base64,R0lGODlhAQAXAJEAAOTj4/X19f///wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4MkQ1QkY1ODYzRkQxMUU0ODZCODkwOEZGMkFDMjcwQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4MkQ1QkY1OTYzRkQxMUU0ODZCODkwOEZGMkFDMjcwQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjgyRDVCRjU2NjNGRDExRTQ4NkI4OTA4RkYyQUMyNzBCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjgyRDVCRjU3NjNGRDExRTQ4NkI4OTA4RkYyQUMyNzBCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAEAFwAAAgVEhKnLBQA7) repeat-x;
+    background: url(data:image/gif;base64,R0lGODlhAQAXAJEAAOTj4/X19f///wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4MkQ1QkY1ODYzRkQxMUU0ODZCODkwOEZGMkFDMjcwQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4MkQ1QkY1OTYzRkQxMUU0ODZCODkwOEZGMkFDMjcwQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjgyRDVCRjU2NjNGRDExRTQ4NkI4OTA4RkYyQUMyNzBCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjgyRDVCRjU3NjNGRDExRTQ4NkI4OTA4RkYyQUMyNzBCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAEAFwAAAgVEhKnLBQA7) repeat-x
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dt b {
-    font-weight: normal;
+    font-weight: 400;
     margin-left: 8px;
-    line-height: 23px;
+    line-height: 23px
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dt b a {
@@ -2364,12 +2177,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     margin-right: 5px;
     border-left: 1px solid #ecebed;
     padding-left: 3px;
-    margin-top: 5px;
-    *background: url(../../images/cart/bg.cart.icons.png) 4px -216px;
-    *width: 14px;
-    *height: 14px;
-    *margin-top: -18px;
-    *margin-right: 2px;
+    margin-top: 5px
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dt s {
@@ -2380,7 +2188,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     height: 6px;
     background: #fff;
     display: none;
-    z-index: 3;
+    z-index: 3
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dd {
@@ -2394,13 +2202,13 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     border: 1px solid #a7a6ac;
     background-color: #fff;
     z-index: 1;
-    width: 438px;
+    width: 438px
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dd .g-myocj-more ul {
     width: 430px;
     height: auto;
-    padding: 5px 0;
+    padding: 5px 0
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dd .g-myocj-more ul li {
@@ -2409,14 +2217,14 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     width: 100%;
     overflow: hidden;
     text-indent: 20px;
-    color: #505966;
+    color: #505966
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dd .g-myocj-more .extra {
     width: 418px;
     border-top: 1px dotted #c9c9c9;
     margin: auto;
-    padding: 10px 0;
+    padding: 10px 0
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dd .g-myocj-more .gift-name {
@@ -2424,7 +2232,7 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     height: 15px;
     overflow: hidden;
     width: 340px;
-    float: left;
+    float: left
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dd .g-myocj-more .extra .dot {
@@ -2433,141 +2241,115 @@ float:left; background:#ff6c00; color:#fff; font-weight:normal; line-height:12px
     padding-bottom: 1px;
     border-bottom: 1px dotted #757677;
     color: #fff;
-    float: left;
-    *width: 55px;
-    *overflow: hidden
+    float: left
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl dd .g-myocj-more .extra .dot span {
     background: #ff6c00;
-    padding: 0 8px 0 8px;
+    padding: 0 8px
 }
 
 .pv_cart_mycart_box .list .cols1 .detail .gift dl.hover dt {
     border: 1px solid #a7a6ac;
-    background-color: #fff;
+    background-color: #fff
 }
 
+.pv_cart_mycart_box .list .cols1 .detail .gift dl.hover dd,
 .pv_cart_mycart_box .list .cols1 .detail .gift dl.hover s {
     display: block
 }
-
-.pv_cart_mycart_box .list .cols1 .detail .gift dl.hover dd {
-    display: block
-}
-
-
-/*hio闊╁浗棣�*/
 
 .pv_cart_mycart_box .koreshopbox {
     width: 100%;
     height: 44px;
     line-height: 44px;
-    background: url(../../images/koreashop_cart/koreashop.title.gif) 0px 0px repeat-x;
-}
-
-input.hide {
-    visibility: hidden;
+    background: url(../../images/koreashop_cart/koreashop.title.gif) repeat-x
 }
 
 .pv_cart_mycart_box .koreshop_all {
     width: 300px;
-    float: left;
+    float: left
 }
 
 .pv_cart_mycart_box .koreshop_all input {
     margin-left: 13px;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 .pv_cart_mycart_box .koreshop_all span {
     margin-left: 5px;
-    padding: 0px 2px;
+    padding: 0 2px;
     color: #FFF;
-    background-color: #d92535;
+    background-color: #d92535
 }
 
 .pv_cart_mycart_box .koreshop_tips {
     width: 500px;
     float: right;
     padding-right: 10px;
-    text-align: right;
+    text-align: right
 }
 
-.pv_cart_mycart_box .koreshop_tips a {
-    color: #20a9f1;
-    text-decoration: underline;
-}
-
+.pv_cart_mycart_box .koreshop_tips a,
 .pv_cart_mycart_box .koreshop_tips a:hover {
     color: #20a9f1;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .cart_newpdt_tip p {
     height: auto;
-    margin: 10px 36px 24px 36px;
+    margin: 10px 36px 24px;
     text-indent: 0;
-    background: none;
+    background: 0 0;
     font-size: 13px;
-    font-weight: bold;
-    line-height: 1.6;
+    font-weight: 700;
+    line-height: 1.6
+}
+
+.cart_newpdt_tip .btn_clac,
+.cart_newpdt_tip .btn_cont {
+    cursor: pointer;
+    display: inline;
+    margin-bottom: 36px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "Microsoft Yahei", Arial;
+    color: #fff;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px
 }
 
 .cart_newpdt_tip .btn_cont {
-    cursor: pointer;
     cursor: hand;
-    display: inline;
-    float: left;
     margin-left: 36px;
-    margin-bottom: 36px;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Microsoft Yahei", "Arial";
-    color: #fff;
-    background: url(/image_global/images/cart/pay-ways/cart_newpdt_btn1.jpg) no-repeat;
+    background: url(/image_global/images/cart/pay-ways/cart_newpdt_btn1.jpg) no-repeat
 }
 
 .cart_newpdt_tip .btn_clac {
-    cursor: pointer;
     cursor: hand;
-    display: inline;
-    float: left;
     margin-left: 25px;
-    margin-bottom: 36px;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Microsoft Yahei", "Arial";
-    color: #fff;
-    background: url(/image_global/images/cart/pay-ways/cart_newpdt_btn2.jpg) no-repeat;
+    background: url(/image_global/images/cart/pay-ways/cart_newpdt_btn2.jpg) no-repeat
 }
 
 .realname-item {
     margin-left: 20px;
     margin-bottom: 8px;
     height: 25px;
-    line-height: 25px;
+    line-height: 25px
 }
 
 .realname-item .th {
-    _display: inine;
     float: left;
     width: 72px;
     color: #505966;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .realname-item .td {
-    _display: inine;
-    float: left;
+    float: left
 }
 
 .realname-item .td input {
@@ -2577,54 +2359,46 @@ input.hide {
     color: #8b8d8e;
     text-indent: 8px;
     background: url(../images/cart/input-bg.gif) repeat-x;
-    line-height: 23px;
+    line-height: 23px
 }
 
 .realname-item .td .error {
     margin-left: 12px;
-    color: #fc0000;
+    color: #fc0000
 }
 
 .realname-box .return_tips_old {
-    margin-left: 20px;
+    margin-left: 20px
 }
 
 .return_tips_old {
     position: relative;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 5px 5px 29px;
     margin-top: 5px;
     margin-bottom: 10px;
-    padding-right: 5px;
-    padding-left: 29px;
     background-color: #fff8af;
     border: 1px solid #ffc77f;
-    line-height: 18px;
+    line-height: 18px
 }
 
 .return_tips_old .icon {
     position: absolute;
     left: 5px;
-    top: 4px;
+    top: 4px
 }
-
-
-/* .pre-icon-global{  display: block; float: left; width: 46px; height: 17px; background: url(../images/cart/pre-icon-global.png) no-repeat; margin-right: 5px;}*/
 
 .check-step .pv_cart_order_list_title .col8 {
-    width: 100px;
+    width: 100px
 }
 
+.check-step .fl_pruduct .col2,
 .check-step .pv_cart_order_list_title .col2 {
-    width: 369px;
-}
-
-.check-step .fl_pruduct .col2 {
-    width: 369px;
+    width: 369px
 }
 
 .check-step .fl_pruduct .col8 {
-    width: 100px;
+    width: 100px
 }
 
 .order-confirm-again {
@@ -2635,22 +2409,19 @@ input.hide {
     background: url(../images/cart/order-confirm-again.jpg) no-repeat;
     cursor: pointer;
     margin-bottom: 40px;
-    margin-right: 31px;
+    margin-right: 31px
 }
 
 .cart-dialog {
-    background: url(/image_global/images/cart/gray.png) repeat;
+    background: url(/image_global/images/cart/gray.png);
     z-index: 99999;
     position: fixed;
-    _position: absolute;
     top: 50%;
     left: 50%;
     width: 400px;
     height: auto;
     margin-left: -200px;
-    margin-top: -100px;
-    _margin-top: 0px;
-    _top: expression(eval((document.documentElement.clientHeight-this.offsetHeight)/2+document.documentElement.scrollTop))
+    margin-top: -100px
 }
 
 .cart-dialog .dialog-main {
@@ -2663,7 +2434,7 @@ input.hide {
     line-height: 38px;
     height: 38px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     color: #5c5f66;
     margin-left: 25px;
     float: left
@@ -2675,8 +2446,7 @@ input.hide {
     margin: 6px;
     width: 15px;
     height: 15px;
-    background: url(/image_global/images/cart/shoppingcart.png) no-repeat -86px -284px;
-    _background-image: url(/image_global/images/cart/shoppingcart.png);
+    background: url(/image_global/images/cart/shoppingcart.png) -86px -284px no-repeat;
     cursor: pointer
 }
 
@@ -2684,19 +2454,14 @@ input.hide {
     height: 100%;
     width: 100%;
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     z-index: 9998;
     background: #000;
-    opacity: 0.5;
+    opacity: .5;
     filter: alpha(opacity=50);
-    display: none;
-    _position: absolute;
-    _height: expression(document.body.offsetHeight+"px")
+    display: none
 }
-
-
-/*20150729 鍏ㄧ悆璐�*/
 
 .pv_cart_mycart_box .block_title_left span.CCquanIcon {
     display: inline-block;
@@ -2706,7 +2471,7 @@ input.hide {
     height: auto;
     color: #fff;
     line-height: normal;
-    background-color: #6b489a;
+    background-color: #6b489a
 }
 
 .CCquanIcon_2 {
@@ -2715,58 +2480,57 @@ input.hide {
     float: left;
     width: 46px;
     height: 17px;
-    background: url(../../images/cart/icon.CCquan.png) no-repeat;
+    background: url(../../images/cart/icon.CCquan.png) no-repeat
 }
 
 .CCquanTariff {
     color: #707070;
-    text-align: center;
+    text-align: center
 }
 
 .pv_cart_mycart_box .freight .CCquanTariff span {
     display: inline;
-    COLOR: #333;
+    COLOR: #333
+}
+
+.palttl_col1,
+.palttl_col2 {
+    display: inline-block;
+    text-align: center
 }
 
 .global_product {
     margin-left: 13px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     margin-right: 8px;
-    color: #505865;
+    color: #505865
 }
 
 .global_product i {
     font-style: normal;
     color: #fff;
-    background-color: #6b489a;
+    background-color: #6b489a
 }
 
 .palttl_col1 {
-    display: inline-block;
-    width: 170px;
-    text-align: center;
+    width: 170px
 }
 
 .palttl_col2 {
-    display: inline-block;
-    width: 140px;
-    text-align: center;
+    width: 140px
 }
 
 .m7 {
-    margin-right: 7px;
+    margin-right: 7px
 }
 
 .pv_cart_balance .total_price p.price span.yunfei {
-    width: 170px;
+    width: 170px
 }
 
-
-/*姣嶅┐icon*/
-
 .global_product i.muying_icon {
-    background-color: #e8a4bd;
+    background-color: #e8a4bd
 }
 
 .muying_icon2 {
@@ -2775,16 +2539,13 @@ input.hide {
     float: left;
     width: 46px;
     height: 17px;
-    background: url(/common/images/muyin/img1_46_17.png) no-repeat;
+    background: url(/common/images/muyin/img1_46_17.png) no-repeat
 }
 
-
-/*20160922 璐墿灏忚创澹�*/
-
 .pv_cart_settle .shoping_notice {
-    color: #ff0000;
+    color: red;
     float: right;
     font-size: 14px;
     line-height: 33px;
-    text-align: right;
+    text-align: right
 }
